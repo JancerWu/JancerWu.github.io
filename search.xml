@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>WIN环境下的软件安装指南</title>
+    <url>/2020/07/27/rebuild/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>整理一下windows环境下常用软件的安装及配置</p>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>开发环境</category>
+      </categories>
+      <tags>
+        <tag>windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于分解的多目标进化算法</title>
+    <url>/2020/07/15/MOEA-D-DE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>基于分解的多目标进化算法即MOEA/D(DE)的学习整理</p>
+<a id="more"></a>
+
+<h2 id="09年MOEA-D-DE算法论文"><a href="#09年MOEA-D-DE算法论文" class="headerlink" title="09年MOEA/D-DE算法论文"></a>09年MOEA/D-DE算法论文</h2><ol>
+<li>切比雪夫分解方法的原理</li>
+<li>为什么分解后的子问题的解是原问题的解，即一个向量对应一个原来的解</li>
+<li>SBX模拟二进制交叉算子的原理</li>
+<li>MOEA/D-DE的基本过程：</li>
+</ol>
+<div class="note no-icon">
+            <ol><li>初始化：T邻域计算，随机种群，参考点Z </li><li>更新（N轮）：<br> ① 确定选择范围（一定低概率从所有父种群中选择）<br> ② DE算子生成新解<br> ③ 变异算子处理<br> ④ 边界检查及修复<br> ⑤ 更新参考点<br> ⑥ 替换解（限制大小）</li><li>停止准则<br>（括号内为保持种群多样性的两个策略）</li></ol>
+          </div>
+
+<ol start="5">
+<li>权重向量的设置，邻域子问题改进点：自适应</li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>MOEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Leetcode每日打卡</title>
+    <url>/2020/07/08/leetcodeEveryday/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>如果每天刷一道题，坚持一年就365道了，想想都激动……</p>
+<a id="more"></a>
+<h2 id="小菜鸡打卡记录"><a href="#小菜鸡打卡记录" class="headerlink" title="小菜鸡打卡记录"></a>小菜鸡打卡记录</h2><ul>
+<li>7.7-简单-边界处理<br>鸽了两天</li>
+<li>7.10-中等-309动态规划（完全没思路）<br>菜哭了DP充一波电再来打</li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++解题注意事项</title>
+    <url>/2020/04/11/C-ForPatAndCspAndLeetCode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>记录用C++解题的一些基本注意事项(整理柳神笔记+自己遇到的坑)</p>
+<a id="more"></a>
+
+<!-- <h1 style="color: red">
+要注意细节
+</h1> -->
+
+<h2 id="DevC-的使用"><a href="#DevC-的使用" class="headerlink" title="DevC++的使用"></a>DevC++的使用</h2><ol>
+<li>让dev支持C++11特性：在编译选项里加上：-std=c++11</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/c++11.png" alt="Tools-&gt;Complier Options"></p>
+<ol start="2">
+<li><p>万能头文件: </p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt; </span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>常用头文件(应对环境限制两手准备)：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cctype&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;set&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bitset&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="语法注意事项"><a href="#语法注意事项" class="headerlink" title="语法注意事项"></a>语法注意事项</h2><ol>
+<li>gets()禁用，替代品fgets(一个指针，长度，stdin),但是此方法会存入回车，注意长度也多了一个，前面有scanf也要getchar一下；要特别注意scanf(“%s”,a)会将空格作为结束标志</li>
+<li>10的9次方以内用int,以上用long long</li>
+<li>double scanf中：%lf 输出：%f;long long 两者都是：%lld</li>
+<li>scanf(“%c”,&amp;a)会读取上一次scanf的换行符，所以输入数字后若要再输入字符，应该加一个getchar(),循环中同；即连续输入时，%c会将空格、换行符读入，需要先用getchar接收后面的空格或者换行符，根据需要使用</li>
+<li>n位补码可以表示的数的范围：[-2的n-1次方，2的n-1次方)，发生正溢时的范围为：[-2的n-1次方，-2]，发生负溢的范围为[0, 2的n-1次方）</li>
+<li>对于没有指明结束输入的题：用类似while(scanf(“%d”,&amp;a)!=EOF)</li>
+<li>整数除以二进行四舍五入的操作可以通过判断奇偶数来避免浮点数的介入</li>
+<li>大的数组，常量定义在主函数之外</li>
+<li>求绝对值：整数型用abs();浮点型用fabs()</li>
+<li>如果要读入一整行，也可以用getline():char str[100];cin.getline(str,100);而如果用string容器，则string str;getline(cin,str);</li>
+<li>bool型默认初始化为false,因此bool hash[100]={true};入坑</li>
+<li>stl中是遍历queue和stack,不要用循环，用是否为空</li>
+<li>特殊的vector需要初始化大小</li>
+<li>注意memset和fill的区别,一律用fill(arr, arr + n, 要填入的内容);</li>
+</ol>
+<h2 id="STL等常规操作"><a href="#STL等常规操作" class="headerlink" title="STL等常规操作"></a>STL等常规操作</h2><h3 id="string"><a href="#string" class="headerlink" title="string"></a>string</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> s; <span class="comment">// 定义一个空字符串s</span></span><br><span class="line">getline(<span class="built_in">cin</span>, s); <span class="comment">// 读取一行的字符串，包括空格</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; s.length(); <span class="comment">// 输出字符串s的长度</span></span><br><span class="line"><span class="built_in">string</span> s2 = s.substr(<span class="number">4</span>); <span class="comment">// 表示从下标4开始一直到结束</span></span><br><span class="line"><span class="built_in">string</span> s3 = s.substr(<span class="number">5</span>, <span class="number">3</span>); <span class="comment">// 表示从下标5开始，3个字符</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//vector元素默认为0,bool为false</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; a; <span class="comment">// 定义的时候不指定vector的大小</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; a.<span class="built_in">size</span>() &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 这个时候size是0</span></span><br><span class="line">a.push_back(i); <span class="comment">// 在vector a的末尾添加⼀个元素i</span></span><br><span class="line">a.pop_back();<span class="comment">//弹出末尾一个元素</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; b(<span class="number">15</span>); <span class="comment">// 定义的时候指定vector的⼤小，默认b里面元素都是0</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; c(<span class="number">20</span>, <span class="number">2</span>); <span class="comment">// 定义的时候指定vector的大⼩并把所有的元素赋一个指定的值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; c.<span class="built_in">size</span>(); i++) &#123;<span class="comment">//像数组一样访问</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; c[i] &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> it = c.<span class="built_in">begin</span>(); it != c.<span class="built_in">end</span>(); it++) &#123; <span class="comment">// 使⽤迭代器的方式访问vector</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; *it &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> it : c)&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; *it &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//直接拿一个小容器来构造也行，.begin()-.end(),这里in是一个数组</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; tin(in, in+n+<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="set"><a href="#set" class="headerlink" title="set"></a>set</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//有序，无重复</span></span><br><span class="line"><span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt; s; <span class="comment">// 定义⼀个空集合s</span></span><br><span class="line">s.insert(<span class="number">1</span>); <span class="comment">// 向集合s里面插入一个1</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> it = s.<span class="built_in">begin</span>(); it != s.<span class="built_in">end</span>(); it++) &#123; </span><br><span class="line"><span class="comment">// 用迭代器遍历集合s里面的每一个元素</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; *it &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; (s.<span class="built_in">find</span>(<span class="number">10</span>) != s.<span class="built_in">end</span>()) &lt;&lt; <span class="built_in">endl</span>; </span><br><span class="line"><span class="comment">// s.find(10) != s.end()表示能找到10这个元素</span></span><br><span class="line">s.erase(<span class="number">1</span>); <span class="comment">// 删除集合s中的1这个元素</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="map"><a href="#map" class="headerlink" title="map"></a>map</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//map 会自动将所有的键值对按照键从⼩小到大排序</span></span><br><span class="line"><span class="built_in">map</span>&lt;<span class="built_in">string</span>, <span class="keyword">int</span>&gt; m; <span class="comment">// 定义⼀个空的map m，键是string类型的，值是int类型的</span></span><br><span class="line">m[<span class="string">"hello"</span>] = <span class="number">2</span>; <span class="comment">// 将key为"hello", value为2的键值对(key-value)存⼊map中</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; m[<span class="string">"hello"</span>] &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 访问map中key为"hello"的value, 如果key不存在，则返回0</span></span><br><span class="line">m[<span class="string">"world"</span>] = <span class="number">3</span>; <span class="comment">// 将"world"键对应的值修改为3</span></span><br><span class="line"><span class="comment">// 用迭代器遍历，输出map中所有的元素，键⽤it-&gt;first获取，值用it-&gt;second获取</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> it = m.<span class="built_in">begin</span>(); it != m.<span class="built_in">end</span>(); it++) &#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; it-&gt;first &lt;&lt; <span class="string">" "</span> &lt;&lt; it-&gt;second &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 访问map的第⼀个元素，输出它的键和值</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; m.<span class="built_in">begin</span>()-&gt;first &lt;&lt; <span class="string">" "</span> &lt;&lt; m.<span class="built_in">begin</span>()-&gt;second &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="comment">// 访问map的最后⼀个元素，输出它的键和值</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; m.rbegin()-&gt;first &lt;&lt; <span class="string">" "</span> &lt;&lt; m.rbegin()-&gt;second &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="comment">// 输出map的元素个数</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; m.<span class="built_in">size</span>() &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
+
+<p>补充：unordered_map （或者unordered_set ）省去了排序的过程，如果偶尔刷题时候⽤map 或者set 超时了，可以考虑⽤unordered_map （或者unordered_set ）缩短代码运行时间、提⾼代码效率</p>
+<h3 id="stack"><a href="#stack" class="headerlink" title="stack"></a>stack</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; s; <span class="comment">// 定义⼀一个空栈s</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">    s.push(i); <span class="comment">// 将元素i压⼊入栈s中</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; s.top() &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 访问s的栈顶元素</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; s.<span class="built_in">size</span>() &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 输出s的元素个数</span></span><br><span class="line">s.pop(); <span class="comment">// 移除栈顶元素</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="queue"><a href="#queue" class="headerlink" title="queue"></a>queue</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q; <span class="comment">// 定义⼀个空队列列q</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">    q.push(i); <span class="comment">// 将i的值依次压⼊队列q中</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; q.front() &lt;&lt; <span class="string">" "</span> &lt;&lt; q.back() &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 访问队列的队首元素和队尾元素</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; q.<span class="built_in">size</span>() &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 输出队列的元素个数</span></span><br><span class="line">q.pop(); <span class="comment">// 移除队列的队首元素</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="位运算bitset"><a href="#位运算bitset" class="headerlink" title="位运算bitset"></a>位运算bitset</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">bitset</span>&lt;5&gt; b(<span class="string">"11"</span>); <span class="comment">//5表示5个二进位</span></span><br><span class="line"><span class="comment">// 初始化⽅方式：</span></span><br><span class="line"><span class="comment">// bitset&lt;5&gt; b; 都为0</span></span><br><span class="line"><span class="comment">// bitset&lt;5&gt; b(u); u为unsigned int，如果u = 1，则输出b的结果为00001</span></span><br><span class="line"><span class="comment">// bitset&lt;8&gt; b(s); s为字符串，如"1101"，则输出b的结果为00001101，在前⾯面补0</span></span><br><span class="line"><span class="comment">// bitset&lt;5&gt; b(s, pos, n); 从字符串的s[pos]开始，n位长度</span></span><br><span class="line"><span class="comment">// 注意，bitset相当于一个数组，但是它是从二进制的低位到高位分别为b[0]、b[1]……的</span></span><br><span class="line"><span class="comment">// 所以按照b[i]⽅方式逐位输出和直接输出b结果是相反的</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; b &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 如果bitset&lt;5&gt; b("11"); 则此处输出00011(即正常二进制顺序)</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; b[i]; <span class="comment">// 如果bitset&lt;5&gt; b("11"); 则此处输出11000(即正常⼆进制顺序的倒序)</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span> &lt;&lt; b.any(); <span class="comment">//b中是否存在1的⼆进制位</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span> &lt;&lt; b.none(); <span class="comment">//b中不存在1吗？</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span> &lt;&lt; b.count(); <span class="comment">//b中1的二进制位的个数</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span> &lt;&lt; b.<span class="built_in">size</span>(); <span class="comment">//b中⼆进制位的个数</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span> &lt;&lt; b.test(<span class="number">2</span>); <span class="comment">//测试下标为2处是否⼆进制位为1</span></span><br><span class="line">b.<span class="built_in">set</span>(<span class="number">4</span>); <span class="comment">//把b的下标为4处置1</span></span><br><span class="line">b.reset(); <span class="comment">//所有位归零</span></span><br><span class="line">b.reset(<span class="number">3</span>); <span class="comment">//b的下标3处归零</span></span><br><span class="line">b.flip(); <span class="comment">//b的所有⼆进制位逐位取反</span></span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> a = b.to_ulong(); <span class="comment">//b转换为unsigned long类型</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="排序问题常用sort"><a href="#排序问题常用sort" class="headerlink" title="排序问题常用sort()"></a>排序问题常用sort()</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">sort(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>());<span class="comment">// 因为这里没有传⼊参数cmp，所以按照默认，v从小到大排列列</span></span><br><span class="line">sort(arr, arr + <span class="number">10</span>, cmp); <span class="comment">// arr从⼤到小排列列，因为cmp函数排序规则设置了了从大到小</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(stu a, stu b)</span> </span>&#123; <span class="comment">// cmp函数，返回值是bool，传⼊的参数类型应该是结构体stu类型</span></span><br><span class="line">    <span class="keyword">if</span> (a.score != b.score) <span class="comment">// 如果学⽣分数不同，就按照分数从大到小排列</span></span><br><span class="line">        <span class="keyword">return</span> a.score &gt; b.score;</span><br><span class="line">    <span class="keyword">else</span> <span class="comment">// 如果学⽣分数相同，就按照学号从⼩到⼤排列</span></span><br><span class="line">        <span class="keyword">return</span> a.number &lt; b.number;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他常用函数"><a href="#其他常用函数" class="headerlink" title="其他常用函数"></a>其他常用函数</h3><ul>
+<li>isalpha 字⺟（包括⼤写、小写）</li>
+<li>islower （⼩写字母）</li>
+<li>isupper （大写字母）</li>
+<li>isalnum （字母⼤写小写+数字）</li>
+<li>isblank （space和\t ）</li>
+<li>isspace （ space 、\t 、\r 、\n ）</li>
+<li>tolower （将字母变为小写）</li>
+<li>toupper （将字母变为大写）</li>
+<li>reverse  (反转)</li>
+<li>sort(a,a+1000,greater<int>()) <h3 id="C-11新特性"><a href="#C-11新特性" class="headerlink" title="C++11新特性"></a>C++11新特性</h3></li>
+</ul>
+<ol>
+<li>auto 可以代替⼀大⻓串的迭代器类型声明</li>
+<li>for循环</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> arr[<span class="number">4</span>] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i : arr)  </span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; i &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 输出数组中的每⼀个元素的值，每个元素占据⼀行</span></span><br><span class="line"><span class="keyword">int</span> arr[<span class="number">4</span>] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> &amp;i : arr) <span class="comment">// i为引⽤变量 </span></span><br><span class="line">    i = i * <span class="number">2</span>; <span class="comment">// 将数组中的每⼀个元素都乘以2，arr[4]的内容变为了&#123;0, 2, 4, 6&#125;</span></span><br><span class="line"><span class="comment">// v是⼀个int类型的vector容器</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> i : v)</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; i &lt;&lt; <span class="string">" "</span>;</span><br><span class="line"><span class="comment">// 上面的写法等价于</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; v.<span class="built_in">size</span>(); i++)</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; v[i] &lt;&lt; <span class="string">" "</span>;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>to_string()&amp;&amp;string.c_str()</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> s1 = to_string(<span class="number">123</span>); <span class="comment">// 将123这个数字转成字符串</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; s1 &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="built_in">string</span> s2 = to_string(<span class="number">4.5</span>); <span class="comment">// 将4.5这个数字转成字符串</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; s2 &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; s1 + s2 &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 将s1和s2两个字符串拼接起来并输出</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%s\n"</span>, (s1 + s2).c_str()); <span class="comment">// 如果想⽤printf输出string，得加⼀个.c_str()</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>将字符串转化为其他类型</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> str = <span class="string">"123"</span>;</span><br><span class="line"><span class="keyword">int</span> a = stoi(str);</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; a;</span><br><span class="line">str = <span class="string">"123.44"</span>;</span><br><span class="line"><span class="keyword">double</span> b = stod(str);</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; b;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p>不不仅有stoi、stod两种，相应的还有：</p>
+<ul>
+<li>stof (string to float)</li>
+<li>stold (string to long double)</li>
+<li>stol (string to long)</li>
+<li>stoll (string to long long)</li>
+<li>stoul (string to unsigned long)</li>
+<li>stoull (string to unsigned long long)</li>
+</ul>
+<h2 id="题解注意事项"><a href="#题解注意事项" class="headerlink" title="题解注意事项"></a>题解注意事项</h2><ol>
+<li>背包问题：注意背包容量边界要取到，背包容积比较为实际值</li>
+<li>字符串处理：可以考虑正则表达式</li>
+<li>dfs+cin真的可以超时</li>
+<li>排序传参用引用传参</li>
+<li>结构体可以通过{}直接构造</li>
+</ol>
+<h2 id="常用算法"><a href="#常用算法" class="headerlink" title="常用算法"></a>常用算法</h2><ol>
+<li>判断素数：<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isPrime</span><span class="params">(<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a &lt;= <span class="number">1</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">int</span> q = (<span class="keyword">int</span>)<span class="built_in">sqrt</span>(a*<span class="number">1.0</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= q; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(a % i == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>DFS:</li>
+</ol>
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>CSP</tag>
+        <tag>PAT</tag>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>cs_for_interview</title>
+    <url>/2020/05/05/cs-for-interview/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>整理复习专业课的过程中考虑到一些可能提问的知识点(看到这些问题脑子里面要能想起来相关概念)</p>
+<a id="more"></a>
+<h2 id="数据结构与算法"><a href="#数据结构与算法" class="headerlink" title="数据结构与算法"></a>数据结构与算法</h2><p>1.如何理解大O?时间复杂度如何衡量？</p>
+<p>2.数据有哪些存储结构，优缺点？</p>
+<p>3.解释一下贪心算法、动态规划、分治法？区别？举例？</p>
+<p>4.栈的应用：括号匹配、后缀表达式求值的算法思想</p>
+<p>5.递归是如何通过栈实现的？递归与非递归算法如何转化？</p>
+<p>6.层次遍历中队列的作用</p>
+<p>7.队列在计算机系统中的应用</p>
+<p>8.字符串的模式匹配？KMP算法思想？</p>
+<p>9.由遍历序列构造一棵二叉树思想？</p>
+<p>10.线索二叉树的概念？</p>
+<p>11.树的存储结构</p>
+<p>12.二叉排序树（二叉查找树BST）及应用</p>
+<p>13.平衡二叉树（AVL树）？与二叉排序树的关系？平衡因子？</p>
+<p>14.哈夫曼树和哈夫曼编码，如何由哈夫曼树得到哈夫曼编码</p>
+<p>15.图的相关定义，离散数学中的内容</p>
+<p>16.图的两种存储结构</p>
+<p>17.图的遍历：广搜深搜算法思想</p>
+<p>18.最短路径问题：Dijkstra？Floyd？算法思想</p>
+<p>19.最小生成树算法：Prim？Kruskal算法思想</p>
+<p>20.拓扑排序，AOV网？关键路径，AOE网？</p>
+<p>21.顺序、折半、分块查找，二叉查找树，平衡二叉树</p>
+<p>22.B-树和B+树及应用</p>
+<p>23.哈希表的概念、哈希函数的构造方法、哈希冲突的解决办法？</p>
+<p>24.常考的排序算法：</p>
+<ul>
+<li>交换排序：快速排序？冒泡排序？</li>
+<li>选择排序：堆排序？简单选择排序？</li>
+<li>插入排序：直接插入排序？折半插入排序？希尔排序？</li>
+<li>归并排序：二路归并？</li>
+<li>分配排序：基数排序？桶排序？</li>
+<li>外部排序？</li>
+</ul>
+<p>各种排序算法的比较总结，稳定性，时空复杂度，是否与初始序列有关</p>
+<p>25.递归算法的时间复杂度如何计算？</p>
+<p>26.动态规划问题一般解题步骤？斐波拉契数问题？找零钱问题？</p>
+<p>27.回溯算法思想？回溯算法的决策树？全排列问题？N皇后问题（8）？</p>
+<p>28.二分查找解题算法思想？寻找一个数、寻找左侧边界、寻找右侧边界？</p>
+<p>29.滑动窗口算法思想（双指针）？最小覆盖子串，字符串排列包含，找所有字母异位词，最长无重复子串？</p>
+<p>30.双指针算法思想？</p>
+<p>快慢指针？</p>
+<ul>
+<li>判断链表是否含有环</li>
+<li>已知链表中含有环，返回这个环的起始位置</li>
+<li>寻找链表的中点</li>
+<li>寻找链表的倒数第 k 个元素</li>
+</ul>
+<p>左右指针？</p>
+<ul>
+<li>二分查找</li>
+<li>两数之和</li>
+<li>反转数组</li>
+<li>滑动窗口算法</li>
+</ul>
+<p>31.BFS算法思想应用？DFS与回溯的关联？<br>如何判断两顶点之间是否联通，或者是否有路径？判断无向图是否是一棵树？</p>
+<p>BFS:</p>
+<ul>
+<li>求不带权无向连通图中距离顶点V最远的一个顶点</li>
+<li>二叉树的最小高度（图中起点到终点的最短距离）</li>
+</ul>
+<p>DFS:</p>
+<p>32.动态规划系列问题？</p>
+<ul>
+<li>最长递增子序列（注意与子串的区别）数学归纳的思想</li>
+<li>0-1背包问题</li>
+<li>子集背包问题（分割等和子集）</li>
+<li>编辑距离</li>
+</ul>
+<p>33.王红梅数据结构课后习题部分：</p>
+<ul>
+<li>数组循环左移算法</li>
+<li>将数组元素分为左边是奇数，右边是偶数两部分，要求O(n)</li>
+<li>顺序表和单链表就地逆置算法（头插法与递归法）</li>
+<li>判定两个主串的公共子序列</li>
+<li>求二叉树的节点个数</li>
+<li>按前序次序打印二叉树的叶子结点</li>
+<li>求二叉树的深度</li>
+<li>二叉树后序遍历序列的逆序</li>
+<li>二叉链表找结点双亲</li>
+<li>n个结点顺序存储的二叉树，非递归前序遍历</li>
+<li>交换二叉树中所有结点的左右子树</li>
+<li>树的孩子兄弟表示法，找x结点的第i个孩子</li>
+<li>深度优先遍历的非递归算法</li>
+<li>分别用DFS和BFS判断有向图两顶点之间是否有路径</li>
+<li>求给定结点在二叉排序树中的层次</li>
+<li>二叉排序树上任意两个不同结点的最近公共祖先</li>
+<li>判定一棵二叉树是否为二叉排序树</li>
+</ul>
+<p>太多了，看蒙圈了……</p>
+<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2><h2 id="计算机组成原理"><a href="#计算机组成原理" class="headerlink" title="计算机组成原理"></a>计算机组成原理</h2><h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h2 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h2><h2 id="计算机前沿技术"><a href="#计算机前沿技术" class="headerlink" title="计算机前沿技术"></a>计算机前沿技术</h2><ul>
+<li><p>区块链</p>
+</li>
+<li><p>数据挖掘</p>
+</li>
+<li><p>云计算</p>
+</li>
+<li><p>大数据</p>
+</li>
+<li><p>人工智能（机器学习、深度学习、自然语言处理)</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>专业课基础</category>
+      </categories>
+      <tags>
+        <tag>问答</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NLP_similarity</title>
+    <url>/2020/05/03/NLP-similarity/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>企图用lucene的默认打分算法BM25similarity直接解决项目问题前对文本相似度匹配算法的最后挣扎，将前面搜集到的一些资料再重新看一遍</p>
+<a id="more"></a>
+
+<h2 id="博文学习1"><a href="#博文学习1" class="headerlink" title="博文学习1"></a>博文学习1</h2><p>先过一遍学习自：<a href="https://segmentfault.com/a/1190000018328273" target="_blank" rel="noopener">https://segmentfault.com/a/1190000018328273</a></p>
+<h3 id="文本距离的概念"><a href="#文本距离的概念" class="headerlink" title="文本距离的概念"></a>文本距离的概念</h3><ol>
+<li><p>欧几里得距离：二维，三维……两点之间的直线距离</p>
+</li>
+<li><p>曼哈顿距离：两个点上在标准坐标系上的绝对轴距之总和</p>
+</li>
+<li><p>切比雪夫距离：将两点之间的距离定义为其各坐标数值差的最大值</p>
+</li>
+<li><p>余弦距离：相比于欧几里德距离，余弦距离更加注重的是两个向量在方向上的差。欧几里德距离衡量的是空间中两点的绝对距离，跟各个点所在的位置坐标是直接相关的；而余弦距离衡量的是空间向量的夹角，更加体现在方向上的差异，而不是位置。</p>
+</li>
+<li><p>汉明距离：在信息论中，表示为两个「等长」字符串之间对应位置的不同字符的个数。换句话说，汉明距离就是将一个字符串变换成另外一个字符串所需要「替换」的字符个数。</p>
+</li>
+</ol>
+<h3 id="分词及分词方法"><a href="#分词及分词方法" class="headerlink" title="分词及分词方法"></a>分词及分词方法</h3><p>直接用现在成熟的中文分词方案，看看lucene里面支持什么</p>
+<h3 id="文本相似度算法"><a href="#文本相似度算法" class="headerlink" title="文本相似度算法"></a>文本相似度算法</h3><ol>
+<li><p>基于词向量</p>
+</li>
+<li><p>基于具体字符</p>
+</li>
+<li><p>基于概率统计</p>
+</li>
+<li><p>基于词嵌入</p>
+</li>
+</ol>
+<p>重点分析：</p>
+<p>基于余弦复杂度的文本相似度比较算法</p>
+<p>适用于海量数据的simhash文本相似度算法</p>
+<h4 id="余弦复杂度-计算余弦"><a href="#余弦复杂度-计算余弦" class="headerlink" title="余弦复杂度(计算余弦)"></a>余弦复杂度(计算余弦)</h4><p>将这些文本中词语，映射到向量空间，形成文本中文字和向量数据的映射关系，再通过计算几个或者多个不同的向量的差异的大小，来计算文本的相似度。</p>
+<p>1.找出两篇文章的关键词；<br>2.每篇文章各取出若干个关键词，合并成一个集合，计算每篇文章对于这个集合中的词的词频；<br>3.生成两篇文章各自的词频向量；<br>4.计算两个向量的余弦相似度，值越接近于1就表示越相似；</p>
+<p>评价：简单但是效率低，无法处理海量数据</p>
+<h4 id="simhash"><a href="#simhash" class="headerlink" title="simhash"></a>simhash</h4><p>为了在爬取网页时用于快速去重，Google发明了一种快速衡量两个文本集相似度的算法：simhash</p>
+<p>simhash中使用了一种局部敏感型的hash算法。所谓局部敏感性hash，与传统hash算法不同的是（如MD5，当原始文本越是相似，其hash数值差异越大），simhash中的hash对于越是相似的内容产生的签名越相近。</p>
+<p>simhash的主要思想是降维，将文本分词结果从一个高维向量映射成一个0和1组成的bit指纹(fingerprint)，然后通过比较这个二进制数字串的差异进而来表示原始文本内容的差异。</p>
+<p>主要是降维了，最后生成一个向量指纹（01字符串），通过汉明距离比较。多认为两个文本的汉明距离&lt;=3的话则认定是相似的。</p>
+<ol>
+<li><p>一个对结果判定很重要的参数：分词数量。当大文本内容出现时，选择合适的topN分词数量进行比较对结果的影响是十分大的。</p>
+</li>
+<li><p>simhash的优点是适用于高维度的海量数据处理，当维度降低，如短文本的相似度比较，simhash并不合适。simhash对于短文本的相似度比较还是存在一些偏差的</p>
+</li>
+</ol>
+<h3 id="分词问题本身这一步就是个大问题"><a href="#分词问题本身这一步就是个大问题" class="headerlink" title="分词问题本身这一步就是个大问题"></a>分词问题本身这一步就是个大问题</h3><p>引用自：<a href="https://www.zhihu.com/question/19578687" target="_blank" rel="noopener">https://www.zhihu.com/question/19578687</a></p>
+<p>中文句子中没有词的界限，因此在进行中文自然语言处理时，通常需要先进行分词，分词效果将直接影响词性、句法树等模块的效果。当然分词只是一个工具，场景不同，要求也不同。</p>
+<p>常见的分词器都是使用机器学习算法和词典相结合，一方面能够提高分词准确率，另一方面能够改善领域适应性。</p>
+<p>随着深度学习的兴起，也出现了基于神经网络的分词器，例如有人员尝试使用双向LSTM+CRF实现分词器，其本质上是序列标注，所以有通用性，命名实体识别等都可以使用该模型，据报道其分词器字符准确率可高达97.5%。</p>
+<p>目前中文分词难点主要有三个：</p>
+<p>1、分词标准：比如人名，在哈工大的标准中姓和名是分开的，但在Hanlp中是合在一起的。这需要根据不同的需求制定不同的分词标准。</p>
+<p>2、歧义：对同一个待切分字符串存在多个分词结果。</p>
+<p>歧义又分为组合型歧义、交集型歧义和真歧义三种类型。</p>
+<p>一般在搜索引擎中，构建索引时和查询时会使用不同的分词算法。常用的方案是，在索引的时候使用细粒度的分词以保证召回，在查询的时候使用粗粒度的分词以保证精度。</p>
+<h2 id="博文学习2"><a href="#博文学习2" class="headerlink" title="博文学习2"></a>博文学习2</h2><p>引自：<a href="https://www.cnblogs.com/xlturing/p/6136690.html" target="_blank" rel="noopener">https://www.cnblogs.com/xlturing/p/6136690.html</a></p>
+<p>衡量两个字符串的相似性有很多种方法，如最直接的利用hashcode，以及经典的主题模型或者利用词向量将文本抽象为向量表示，再通过特征向量之间的欧式距离或者皮尔森距离进行度量。</p>
+<ul>
+<li><p>字面度量</p>
+</li>
+<li><p>语义度量</p>
+</li>
+</ul>
+<p>想要做到语义层面的度量，我们需要用到机器学习建模，而自然语言的问题转化为机器学习的首要问题便是找到一种方法把自然语言的符号数学化。</p>
+<p>在自然语言处理领域中，有两大理论方向，一种是基于统计的经验主义方法，另一种是基于规则的理性主义方法。而随着计算机性能的提升，以及互联网发展而得到的海量语料库，目前NLP的研究更多是基于统计的经验主义方法。</p>
+<p>整理得非常好，有很多数学公式及原理图，回来看。</p>
+<h2 id="博文学习3"><a href="#博文学习3" class="headerlink" title="博文学习3"></a>博文学习3</h2><p>生动解释什么是TF-IDF算法</p>
+<h2 id="bert模型"><a href="#bert模型" class="headerlink" title="bert模型"></a>bert模型</h2><p>好像离要解决的问题越来越远了……<br>1.<a href="https://zhuanlan.zhihu.com/p/46652512" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/46652512</a><br>2.<a href="https://www.zhihu.com/question/298203515?from=timeline&amp;isappinstalled=0&amp;utm_medium=social&amp;utm_source=wechat_session" target="_blank" rel="noopener">https://www.zhihu.com/question/298203515?from=timeline&amp;isappinstalled=0&amp;utm_medium=social&amp;utm_source=wechat_session</a></p>
+<h2 id="看的一些中文论文的说法"><a href="#看的一些中文论文的说法" class="headerlink" title="看的一些中文论文的说法"></a>看的一些中文论文的说法</h2><p>从计算步骤来看,文本相似度主要分为文本表示、特征提取和相似度计算三个过程，下面就这三个过程对目前文本相似度计算研究进展进行概述：<br>（1）文本表示：文本表示模型主要可分为两种:基于词袋模型和基于语义模型。在词袋模型中，向量空间模型（VSM）简单高效，应用最为广泛，但往往存在纬度高和语义缺失等问题。基于语义模型的文本表示方法正是众多学者在VSM的基础上加入词汇间的语义关系形成的。<br>（2）特征提取：过滤掉无关信息同时实现文本降维。传统的TF-IDF方法没有考虑到文本上下文的结构信息，改进的PageRank算法提取文本关键词，准确率比传统方法有所提升。<br>（3）相似度计算：VSM仅利用文本间相同词计算相似度，忽略了不同词间的相关度。Word2Vec自被提出以来,可以成功解决文本特征的维数灾难问题,通过词嵌入基于神经网络训练大量语料库，将训练集中每个词语映射为特定长度的向量，以此计算词语间的语义相似度。</p>
+<h2 id="最后准备用现成接口直接搜索打分来匹配"><a href="#最后准备用现成接口直接搜索打分来匹配" class="headerlink" title="最后准备用现成接口直接搜索打分来匹配"></a>最后准备用现成接口直接搜索打分来匹配</h2><p>1.<a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/scoring-theory.html" target="_blank" rel="noopener">https://www.elastic.co/guide/cn/elasticsearch/guide/current/scoring-theory.html</a></p>
+<p>借鉴TF-IDF和向量空间模型，加入一些新特性<br>使用布尔模型。。。好像不大行啊。</p>
+]]></content>
+      <categories>
+        <category>NLP</category>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>文本相似度匹配算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NLP中的文本相似度</title>
+    <url>/2020/03/16/text_similarity_in_NLP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;关于NLP中的文本相似度算法简单整理</p>
+<a id="more"></a>
+
+<h2 id="计算文本相似度的算法分类"><a href="#计算文本相似度的算法分类" class="headerlink" title="计算文本相似度的算法分类"></a>计算文本相似度的算法分类</h2><ol>
+<li>基于词向量</li>
+<li>基于具体字符</li>
+<li>基于概率统计</li>
+<li>基于词嵌入的</li>
+</ol>
+<p>从0到1，了解NLP中的文本相似度（简单易懂）<br><a href="https://segmentfault.com/a/1190000018328273" target="_blank" rel="noopener">https://segmentfault.com/a/1190000018328273</a></p>
+<p>NLP点滴，文本相似度<br><a href="https://www.cnblogs.com/xlturing/p/6136690.html" target="_blank" rel="noopener">https://www.cnblogs.com/xlturing/p/6136690.html</a></p>
+<p>什么是TF-IDF<br><a href="https://zhuanlan.zhihu.com/p/31197209" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/31197209</a></p>
+<p>【NLP】Google BERT详解<br><a href="https://zhuanlan.zhihu.com/p/46652512" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/46652512</a></p>
+<p>[NLP自然语言处理]谷歌BERT模型深度解析<br><a href="https://blog.csdn.net/qq_39521554/article/details/83062188" target="_blank" rel="noopener">https://blog.csdn.net/qq_39521554/article/details/83062188</a></p>
+<p>图解当前最强语言模型BERT：NLP是如何攻克迁移学习的？<br><a href="https://www.jiqizhixin.com/articles/121304" target="_blank" rel="noopener">https://www.jiqizhixin.com/articles/121304</a></p>
+<p>语义相似度 Semantic Similarity</p>
+<h2 id="基于融合共线距离的句法网络下文本语义相似度计算"><a href="#基于融合共线距离的句法网络下文本语义相似度计算" class="headerlink" title="基于融合共线距离的句法网络下文本语义相似度计算"></a>基于融合共线距离的句法网络下文本语义相似度计算</h2><p>文本相似度主要分为三个过程：</p>
+<ol>
+<li>文本表示</li>
+<li>特征提取</li>
+<li>相似度计算</li>
+</ol>
+<h3 id="文本表示"><a href="#文本表示" class="headerlink" title="文本表示"></a>文本表示</h3><p>基于词袋模型<br>向量空间模型VSM简单高效，却往往存在稀疏性、高维性和语义缺失等问题</p>
+<p>基于语义模型</p>
+<h3 id="特征提取"><a href="#特征提取" class="headerlink" title="特征提取"></a>特征提取</h3><h3 id="相似度计算"><a href="#相似度计算" class="headerlink" title="相似度计算"></a>相似度计算</h3><p>word2vec 可以成功解决文本特征的维数灾难问题，运用词嵌入方法，无需引入外部知识库也能计算词语的语义相似度。</p>
+<p>TF-IDF 文本特征权重计算方法<br>频率  倒排档文本频率 衡量特征项的重要程度<br>TF考虑了特征项在文本中的使用次数，但存在部分高频特征项在单个文本毫无意义，引入IDF消除这类词的干扰</p>
+<p>余弦相似度</p>
+<p>传统的余弦相似度只能依靠文本中具有的相同词语计算文本相似度，而忽略了词语间的语义关系和语法关系</p>
+<p>文本语义相似度计算</p>
+<p>在计算文本语义相似度之前，需要计算文本特征项之间的相似度，采用word2vec模型通过词嵌入基于神经网络训练大量语料库，将训练集中每个词语映射为特定长度的向量，以此计算词语间的语义相似度。</p>
+<h3 id="基于领域词典的中文文本相似度匹配"><a href="#基于领域词典的中文文本相似度匹配" class="headerlink" title="基于领域词典的中文文本相似度匹配"></a>基于领域词典的中文文本相似度匹配</h3>]]></content>
+      <categories>
+        <category>NLP</category>
+      </categories>
+      <tags>
+        <tag>文本相似度匹配</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>排序算法总结</title>
+    <url>/2020/04/29/sort/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>记录一些基本排序算法，并尝试加上一些自己的理解</p>
+<a id="more"></a>
+
+<h2 id="时间复杂度与空间复杂度"><a href="#时间复杂度与空间复杂度" class="headerlink" title="时间复杂度与空间复杂度"></a>时间复杂度与空间复杂度</h2><p>1.时间复杂度：</p>
+<p>将算法中基本操作的执行次数作为算法时间复杂度的度量。<br>时间复杂度不是执行完一段程序的总时间，而是其中基本操作的总次数。<br>对一个算法进行时间复杂度分析的要点，是明确算法中哪些操作是基本操作。<br>问题规模：n,基本操作所执行的次数是n的一个函数f(n)<br>取出f(n)中随n增大而增长最快的项，然后将其系数变为1，作为时间复杂度的度量，记为：<br>T(n)=O(f(n)中增长最快的项/此项的系数)<br>有时算法复杂度不仅跟初始输入的数据规模n有关，还和数据本身有关，如一些排序算法数据初始有序性不同，通常将最坏的情况作为算法时间复杂度的度量<br>实际程序分析中将循环次数设为未知数，构造等式关系进而求解</p>
+<p>2.空间复杂度：</p>
+<p>算法在执行时所需存储空间的度量，主要考虑临时占用的存储空间的大小，以数量级的形式给出。</p>
+<h2 id="经典排序算法"><a href="#经典排序算法" class="headerlink" title="经典排序算法"></a>经典排序算法</h2><h3 id="分类记忆"><a href="#分类记忆" class="headerlink" title="分类记忆"></a>分类记忆</h3><h4 id="插入类的排序：直接插入排序、折半插入排序、希尔排序"><a href="#插入类的排序：直接插入排序、折半插入排序、希尔排序" class="headerlink" title="插入类的排序：直接插入排序、折半插入排序、希尔排序"></a>插入类的排序：直接插入排序、折半插入排序、希尔排序</h4><p>在已经有序的部分基础上找位置插入新关键字，之前不能保证任何关键字归到最后的绝对正确位置。</p>
+<p>1.直接插入排序<br>按照第一个关键字有序，从他后面的关键字依次开始，进行n-1趟，每趟找到待排关键字在有序序列的位置，方法是前面的给后面的让位置。</p>
+<ul>
+<li>稳定</li>
+<li>时间：有序最好O(n)；逆序最坏O($n^2$)</li>
+<li>空间：O(1)</li>
+</ul>
+<p>2.折半插入排序<br>与直接插入类似，只是查找插入位置的方法不同，采用折半查找法来查找插入位置。折半查找法要满足序列已经有序。</p>
+<ul>
+<li>稳定</li>
+<li>时间：最好O(n$log_2n$)；最坏O($n^2$)；平均O($n^2$)</li>
+<li>空间：O(1)</li>
+</ul>
+<p>3.希尔排序（缩小增量排序）</p>
+<h4 id="交换类的排序：冒泡排序、快速排序"><a href="#交换类的排序：冒泡排序、快速排序" class="headerlink" title="交换类的排序：冒泡排序、快速排序"></a>交换类的排序：冒泡排序、快速排序</h4><p>核心是交换，每趟排序都通过一系列的“交换”动作，让一个关键字排到最终位置上。时间复杂度都与数据初始有序性有关</p>
+<p>1.冒泡排序<br>每一趟，两两比较，大的换到后面，进行n-1趟，设置标志，结束条件为一趟排序过程中没有发生关键字交换</p>
+<ul>
+<li>稳定</li>
+<li>时间：有序最好O(n)；逆序最坏O($n^2$)</li>
+<li>空间：O(1)</li>
+</ul>
+<p>2.快速排序<br>每一趟选择当前子序列的一个关键字（通常第一个）作为枢纽，双指针法，分别从序列两端往中间扫描，分别将小的换到枢纽前面，大的放他后面，两端指针不断靠近最终相遇从而确定枢纽的位置，完成一趟划分，得到更短的子序列，用相同的方式处理子序列（把所有子序列都划分完毕成为一趟划分）。由其算法基本思想可知，用到递归。</p>
+<ul>
+<li>不稳定</li>
+<li>时间：无序最好O(n$log_2n$)；有序O($n^2$)；平均O(n$log_2n$)</li>
+<li>空间：O($log_2n$)</li>
+</ul>
+<p>扩展：递归与栈<br>什么是递归？<br><a href="https://www.zhihu.com/question/20507130/answer/15551917" target="_blank" rel="noopener">传送门1</a><br><a href="https://blog.csdn.net/ds1130071727/article/details/80431276" target="_blank" rel="noopener">传送门2</a></p>
+<h4 id="选择类的排序：简单选择排序、堆排序"><a href="#选择类的排序：简单选择排序、堆排序" class="headerlink" title="选择类的排序：简单选择排序、堆排序"></a>选择类的排序：简单选择排序、堆排序</h4><p>核心为“选择”，选出最大，与末位交换。</p>
+<p>1.简单选择排序：<br>无序部分从头到尾扫描，选出最小的放到前面，即有序部分。</p>
+<ul>
+<li>不稳定</li>
+<li>时间：与初始序列无关O($n^2$)</li>
+<li>空间：O(1)</li>
+</ul>
+<p>2.堆排序（重要）：</p>
+<p>什么是堆？看成一棵完全二叉树，满足：任何一个非叶结点的值都不大与其左右孩子结点的。即大顶堆，父亲大孩子小。</p>
+<p>基本思想：堆的根结点最大，因此将一个无序序列调整成一个堆，就能找出最大的元素，然后把他交换到序列的最后，这样，有序加一，无序减一，对新的无序序列重复这样的操作，就实现了排序。</p>
+<p>关键操作：将序列调整为堆</p>
+<p>堆排序执行过程描述：</p>
+<ol>
+<li>无序序列对应完全二叉树，从第一个非叶子结点开始，从右至左，从下至上，进行调整得到大顶堆</li>
+<li>首位交换，无序减一，有序加一。这是新换的首位可能不满足定义，继续调整。</li>
+<li>重复2），直到只剩下一个关键字，排序结束</li>
+</ol>
+<p>实际实现过程中要注意几个点：</p>
+<ol>
+<li>找到第一个非叶子结点开始调整</li>
+<li>调整过程中注意要下移动调整，相当于走了一条当前结点到叶子结点的路径</li>
+</ol>
+<ul>
+<li>不稳定</li>
+<li>时间：与初始序列无关O(n$log_2n$)</li>
+<li>空间：O(1)</li>
+</ul>
+<p>适用情况：数量级大，规模大的排序，例如从一万个关键字挑出前10个最小的</p>
+<p>扩展：面试海量数据处理？10亿个数如何找到TOP10?</p>
+<h4 id="归并类的排序：二路归并"><a href="#归并类的排序：二路归并" class="headerlink" title="归并类的排序：二路归并"></a>归并类的排序：二路归并</h4><p>分治：整个序列分成两半，每一半分别进行归并排序，有序后合并，用递归。</p>
+<ul>
+<li>稳定</li>
+<li>时间：与初始序列无关O(n$log_2n$)</li>
+<li>空间：O(n)需要转存整个待排序列</li>
+</ul>
+<h4 id="基数类的排序：基数排序"><a href="#基数类的排序：基数排序" class="headerlink" title="基数类的排序：基数排序"></a>基数类的排序：基数排序</h4><p>O(n$log_2n$)</p>
+<h4 id="外部排序（上面都是内部排序）"><a href="#外部排序（上面都是内部排序）" class="headerlink" title="外部排序（上面都是内部排序）"></a>外部排序（上面都是内部排序）</h4><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      <categories>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>trojan</title>
+    <url>/2020/04/16/trojan/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是从ss-&gt;ssr-&gt;v2ray-&gt;trojan的折腾终章，只为畅通无阻科学上网<br>P.S.今天吃鱼不小心被鱼刺卡到，我脑袋里突然蹦出来一个形容遇到bug时十分形象的词语：如鲠在喉！！！</p>
+<a id="more"></a>
+
+<h3 id="Trojan原理"><a href="#Trojan原理" class="headerlink" title="Trojan原理"></a>Trojan原理</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/method.png" alt="原理图"></p>
+<p>英文官方文档还没看，先简单记录一下通过折腾配置体会到的：<br>Trojan思想是把自己伪装成一个持证上岗的web服务器（持有SSL证书），提供https服务（443端口）,国内的trojan客户端可以把国外的trojan服务器端作为中转访问外网，非客户端请求则通过trojan访问nginx服务器的80端口（nginx提供一个真实的静态网站服务），因此看起来和普通的加密传输的web服务器没有区别，是目前最新的扶墙技术。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>伪装也要装的像一点，索性给自己的博客挪个窝，github page稳定性自己体会……再综合上述，需要做以下工作：</p>
+<ul>
+<li>注册一个域名+SSL证书</li>
+<li>借助git搭个远程仓库</li>
+<li>安装配置nginx环境</li>
+<li>安装配置trojan环境</li>
+</ul>
+<h3 id="实践踩坑"><a href="#实践踩坑" class="headerlink" title="实践踩坑"></a>实践踩坑</h3><h4 id="注册域名与SSL证书"><a href="#注册域名与SSL证书" class="headerlink" title="注册域名与SSL证书"></a>注册域名与SSL证书</h4><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html" target="_blank" rel="noopener">互联网协议框架复习一下</a></li>
+<li><a href="https://www.ruanyifeng.com/blog/2016/06/dns.html" target="_blank" rel="noopener">DNS原理入门</a></li>
+<li><a href="https://www.jianshu.com/p/4ba39737969a" target="_blank" rel="noopener">域名填写指南</a></li>
+</ul>
+<p>提前使用了github的学生包，由namecheap提供的一年免费.me域名与SSL证书服务</p>
+<p>注意事项：<br>1.SSL服务购买后去Dashboard里面找<br><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/sslhere.png" alt="ssl"><br>2.生成私钥以及CSR：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">openssl req -<span class="keyword">new</span> -newkey rsa：<span class="number">2048</span> -nodes -keyout yoursever.key -out yoursever.csr</span><br></pre></td></tr></table></figure>
+<p>3.域名所有权验证选择第三个Domains to Validate：添加指定记录，我按要求添加后长时间没有验证成功最后无奈找国外客服，按照客服要求重新添加后解决（删除了指定的记录host里面的次级和顶级域名）</p>
+<h4 id="搭建远程git仓库（-）"><a href="#搭建远程git仓库（-）" class="headerlink" title="搭建远程git仓库（*）"></a>搭建远程git仓库（*）</h4><p>linux基础命令不牢固，导致地动山摇……梳理一下思路，有待进一步研究git用法</p>
+<p>1.新建用户ssh远程登陆(之前一直root太不安全了)<br>2.克隆github博客项目(不是源码，只是hexo部署生成的)<br>3.新建空白仓库，创建./hooks/post-receive文件，使用Git-Hooks同步网站根目录，当有Git收发的时候会调用该脚本，自动将最新内容同步到网站根目录中，post-receive中指定相应git仓库以及网站根目录</p>
+<h4 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx(*)"></a>安装nginx(*)</h4><p>网上一些教程需要配置环境解压缩包编译安装，反正我是没搞成，最后不信邪直接yum一键安装，有待进一步研究nginx</p>
+<ul>
+<li>配置文件：/etc/nginx/nginx.conf</li>
+<li>日志文件：/var/log/nginx/access.log &amp; /var/log/nginx/error.log</li>
+<li>443配置CRT证书需要将得到的两个文件合并成一个</li>
+<li>访问发现403问题可能是配置文件里面user不存在或者没有权限（权限问题是个大坑）</li>
+</ul>
+<p>上述给博客挪窝具体操作可参考：<a href="http://fisher.lazybone.xyz/%E4%BB%8Egithub%E8%BF%81%E7%A7%BBhexo%E5%8D%9A%E5%AE%A2.html" target="_blank" rel="noopener">fisher’s blog</a></p>
+<h4 id="安装trojan"><a href="#安装trojan" class="headerlink" title="安装trojan(*)"></a>安装trojan(*)</h4><p>直接官网原版压缩包安装需要自己写一些配置脚本，一番折腾后仍然是linux基础不牢地动山摇……最后还是乖乖地用别人写好的脚本一键安装，参考<a href="https://tlanyan.me/trojan-tutorial/" target="_blank" rel="noopener">tlanyan</a></p>
+<ul>
+<li>/usr/local/bin/trojan</li>
+<li>/usr/local/etc/trojan/config.json</li>
+<li>/etc/systemd/system/trojan.service</li>
+</ul>
+<p>带证书的blog与trojan伪装共用方案：<br>为了trojan的安全性，443端口必须给它，将其伪装由默认80端口改为其他任意端口，如6666，nginx做相应配置；同时，为了让blog持证上岗，但已经失去了443端口，不得已80端口硬着头皮上，在80端口上配置SSL，需要注意一点的是如果用户访问http连接的话会提示“the plain http request was sent to https”意思就是http请求转到https了，其实nginx官网认为这个是正常现象定义了个497的状态，只要在nginx配置中添加以下内容就可以搞定：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">error_page <span class="number">497</span> https:<span class="comment">//$server_name:80$request_uri;   </span></span><br><span class="line"><span class="comment">// 自动跳转域名后面会带着:80很丑也是没办法了</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h3><p>1.英文文档不要依赖谷歌一键翻译，参考一下就好，否则会出现意想不到的问题<br>2.linux基础不牢地动山摇</p>
+<ul>
+<li>用户、组及文件权限</li>
+<li>各种基础命令的熟练使用</li>
+<li>vim编辑器的快捷编辑方式</li>
+</ul>
+<p>3.由linux的ssh远程登陆引发的一系列网络安全以及密码学问题<br>4.git的使用只看到了冰山一角<br>5.影响VPS网速的因素研究</p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>Trojan</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java网络爬虫初探</title>
+    <url>/2020/04/01/web-crawler-in-java/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;Java网络爬虫初探</p>
+<a id="more"></a>
+<h2 id="来自掘金平头哥的技术博文"><a href="#来自掘金平头哥的技术博文" class="headerlink" title="来自掘金平头哥的技术博文"></a>来自<a href="https://juejin.im/user/5c84e78fe51d45491d7592f7" target="_blank" rel="noopener">掘金平头哥的技术博文</a></h2><ol>
+<li><p>学Java爬虫需要的基础知识即系列总括(<a href="https://juejin.im/post/5d92012fe51d4578397d2dc6" target="_blank" rel="noopener">详情</a>)</p>
+</li>
+<li><p>Java网络爬虫入门(<a href="https://juejin.im/post/5d9aaafcf265da5ba74521ac" target="_blank" rel="noopener">详情</a>)</p>
+</li>
+</ol>
+<p>以采集虎扑列表新闻的新闻标题和详情页为例，使用 Jsoup 和 HttpClient 两种方式获取到页面，然后利用选择器解析得到数据</p>
+<ul>
+<li>Jsoup</li>
+<li>Httpclient + 正则表达式</li>
+</ul>
+<ol start="3">
+<li>解决网络采集的登陆问题(<a href="https://juejin.im/post/5d9c531f6fb9a04e0b0da679" target="_blank" rel="noopener">详情</a>)</li>
+</ol>
+<p>以获取豆瓣个人信息为例，从手动设置 cookies 和模拟登陆这两种方式</p>
+<ul>
+<li>手动设置cookie(但会失效)</li>
+<li>模拟登陆方式：Jsoup和httpclient(登陆验证问题自己扩展)</li>
+</ul>
+<ol start="4">
+<li>网页采集遇到数据 Ajax 异步加载(<a href="https://juejin.im/post/5d9d81fbf265da5bbe2a3116" target="_blank" rel="noopener">详情</a>)</li>
+</ol>
+<p>以网易新闻为例，从利用 htmlunit 工具获取渲染完页面和反向思维直接获取到 Ajax 请求连接获取数据两种方式</p>
+<ul>
+<li>内置一个浏览器内核，以内置浏览器 Selenium 方式为例（效率不高而且不稳定）</li>
+<li>反向解析法</li>
+<li>疑问：如何确定是爬虫时遇到数据异步加载？</li>
+</ul>
+<ol start="5">
+<li>网页采集 IP 被封(<a href="https://juejin.im/post/5d9d8220f265da5bb7464c74" target="_blank" rel="noopener">详情</a>)</li>
+</ol>
+<p>以豆瓣电影为例，主要以设置代理IP为中心，讨论IP被限制访问的解决办法，还会简单的聊一下如何搭建自己的ip代理服务</p>
+<ul>
+<li>IP代理池项目：proxy_pool </li>
+</ul>
+<ol start="6">
+<li>Java多线程爬虫以及分布式爬虫架构方案(<a href="https://juejin.im/post/5da670d1f265da5b9d1efe75" target="_blank" rel="noopener">详情</a>)</li>
+</ol>
+<p>单线程缺点：</p>
+<ol>
+<li>效率低，程序之间串行</li>
+<li>对服务器的CPU利用率不高</li>
+</ol>
+<p>要做好多线程爬虫就必须做好两点：第一点就是统一的待采集 URL 维护，第二点就是 URL 的去重</p>
+<ul>
+<li>维护待采集的 URL</li>
+<li>URL 的去重</li>
+</ul>
+<ol start="7">
+<li>作者没有更新……</li>
+</ol>
+<h2 id="《网络数据采集技术：Java网络爬虫实战》"><a href="#《网络数据采集技术：Java网络爬虫实战》" class="headerlink" title="《网络数据采集技术：Java网络爬虫实战》"></a>《网络数据采集技术：Java网络爬虫实战》</h2>]]></content>
+      <categories>
+        <category>Java</category>
+        <category>网络爬虫</category>
+      </categories>
+      <tags>
+        <tag>Java爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux命令行</title>
+    <url>/2020/03/09/linux&amp;shell/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;Linux命令行与shell脚本编程大全（第三版）读书笔记</p>
+<a id="more"></a>
+
+<h2 id="第-1-章-初识Linux-shell"><a href="#第-1-章-初识Linux-shell" class="headerlink" title="第 1 章 初识Linux shell"></a>第 1 章 初识Linux shell</h2><h3 id="什么是Linux"><a href="#什么是Linux" class="headerlink" title="什么是Linux"></a>什么是Linux</h3><ol>
+<li>Linux结构：四部分</li>
+<li>Linux内核四种基本功能</li>
+<li>GNU工具</li>
+<li>桌面环境</li>
+</ol>
+<h3 id="Linux发行版"><a href="#Linux发行版" class="headerlink" title="Linux发行版"></a>Linux发行版</h3><h2 id="第-2-章-走进shell"><a href="#第-2-章-走进shell" class="headerlink" title="第 2 章 走进shell"></a>第 2 章 走进shell</h2><h2 id="第-3-章-基本的bash-shell命令"><a href="#第-3-章-基本的bash-shell命令" class="headerlink" title="第 3 章 基本的bash shell命令"></a>第 3 章 基本的bash shell命令</h2><h3 id="bash手册"><a href="#bash手册" class="headerlink" title="bash手册"></a>bash手册</h3><p>你不可能记住所有命令！</p>
+<ul>
+<li>man + 命令：查看bash手册</li>
+<li>大多数命令可以接受-help或–help选项</li>
+</ul>
+<h3 id="浏览文件系统"><a href="#浏览文件系统" class="headerlink" title="浏览文件系统"></a>浏览文件系统</h3><ol>
+<li>Linux文件系统</li>
+<li>遍历目录：</li>
+</ol>
+<ul>
+<li>显示当前工作目录： pwd</li>
+<li>跳回主目录： cd</li>
+<li>绝对路径与相对路径:<br>单点符（.)：表示当前目录<br>双点符（..)：表示当前目录的父目录</li>
+</ul>
+<h3 id="文件和目录列表"><a href="#文件和目录列表" class="headerlink" title="文件和目录列表"></a>文件和目录列表</h3><p>ls命令：</p>
+<ol>
+<li>区分文件和目录： -F  (目录后加/，可执行文件加*)</li>
+<li>显示隐藏文件： -a</li>
+<li>递归选项： -R</li>
+<li>显示长列表： -l</li>
+<li>按易读方式显示文件大小： -h<br>每一行都包含了关于文件的信息：</li>
+</ol>
+<ul>
+<li>文件类型</li>
+<li>文件的权限</li>
+<li>文件的硬连接总数</li>
+<li>文件属主的用户名</li>
+<li>文件属组的组名</li>
+<li>文件的大小（字节为单位）</li>
+<li>文件的上次修改时间</li>
+<li>文件名或目录名</li>
+</ul>
+<p>常用组合：ls -alF</p>
+<ol start="5">
+<li>过滤输出列表： </li>
+</ol>
+<ul>
+<li>代表一个字符：？</li>
+<li>代表零个或多个字符：*</li>
+<li>包含字符内容：[] [!]</li>
+</ul>
+<ol start="6">
+<li>只列出目录本身的信息，不列出其中的内容：-d  </li>
+<li>查看文件或目录的inode编号：-i</li>
+</ol>
+<h3 id="处理文件"><a href="#处理文件" class="headerlink" title="处理文件"></a>处理文件</h3><ol>
+<li>创建空文件： touch 同时改变文件的修改时间</li>
+<li>只改变访问时间： touch -a</li>
+<li>查看文件访问时间： ls -l –time=atime</li>
+<li>复制文件： cp source destination     (加上i选项，强制shell询问是否需要覆盖已有文件)</li>
+</ol>
+<p>！注意：目标名尾部加上一个/表明是目录，避免当作文件处理尤其是该文件不存在时会出现意想不到的错误</p>
+<ol start="5">
+<li>递归复制整个目录中的内容： -R</li>
+<li>支持通配符</li>
+<li>使用制表符自动补全</li>
+<li>链接文件：虚拟的副本。链接是目录中指向文件真是位置的占位符。有两种不同类型的文件链接：</li>
+</ol>
+<ul>
+<li>符号链接：ln -s  (是独立文件，与原文件大小不同)</li>
+<li>硬连接： ln (虚拟文件，包含了原始文件的信息及位置，从根本上而言是同一个文件)</li>
+</ul>
+<ol start="9">
+<li>重命名文件或移动位置： mv [-i]</li>
+<li>删除文件： rm -i</li>
+<li>删除很多文件不提示(慎用)： rm -f</li>
+</ol>
+<h3 id="处理目录"><a href="#处理目录" class="headerlink" title="处理目录"></a>处理目录</h3><ol>
+<li>创建目录： mkdir</li>
+<li>同时创建多个目录和子目录： mkdir -p</li>
+<li>删除目录(只能删除空目录)： rmdir</li>
+<li>在整个非空目录上使用(进入目录并挨个提示删除)：rm -ri</li>
+<li>没有警告，全部删除（慎用）： rm -rf</li>
+<li>了解目录结构： tree </li>
+</ol>
+<h3 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a>查看文件内容</h3><ol>
+<li>查看文件类型：file</li>
+<li>显示文本文件：cat</li>
+</ol>
+<ul>
+<li>加上行号： -n</li>
+<li>只给有文本的行加行号： -b</li>
+<li>不让制表符出现： -T</li>
+</ul>
+<ol start="3">
+<li>一页一页显示文本文件： more</li>
+<li>more升级版(实现上下键翻页)： less</li>
+<li>查看末尾（默认末尾10行）：tail</li>
+</ol>
+<ul>
+<li>修改显示行数：-n +数字</li>
+<li>实时监测： -f</li>
+</ul>
+<ol start="6">
+<li>查看开头（同上）：head</li>
+</ol>
+<h2 id="第-4-章-更多的bash-shell命令"><a href="#第-4-章-更多的bash-shell命令" class="headerlink" title="第 4 章 更多的bash shell命令"></a>第 4 章 更多的bash shell命令</h2>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>读书笔记</category>
+        <category>shell</category>
+      </categories>
+      <tags>
+        <tag>bash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>弃坑SSR转V2RAY</title>
+    <url>/2020/03/03/ssr_to_v2ray/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;利用SSR科学上网多次被识破伪装，屡遭封锁，更换IP实属不易，是时候体验一下V2ray了！！</p>
+<a id="more"></a>
+
+<h2 id="简单记录我的V2ray装配过程"><a href="#简单记录我的V2ray装配过程" class="headerlink" title="简单记录我的V2ray装配过程"></a>简单记录我的V2ray装配过程</h2><h3 id="服务器端"><a href="#服务器端" class="headerlink" title="服务器端"></a>服务器端</h3><div class="note default">
+            <p><a href="https://www.v2ray.com/" target="_blank" rel="noopener">官网:https://www.v2ray.com/</a> </p>
+          </div>
+
+<ol>
+<li><p>重置VPS系统：之前也没有啥数据，索性重新捣鼓一遍</p>
+</li>
+<li><p>修改时区：V2ray对服务器与客户端的时间有严格要求<a href="https://blog.mioshu.com/archives/113.html" target="_blank" rel="noopener">[参考]</a></p>
+</li>
+<li><p>下载-&gt;安装-&gt;启动-&gt;更新</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">下载：wget https://install.direct/go.sh</span><br><span class="line">安装：bash go.sh</span><br><span class="line">启动：systemctl start v2ray</span><br><span class="line">查看状态：systemctl status v2ray</span><br><span class="line">设置开机自启：systemctl <span class="built_in">enable</span> v2ray</span><br><span class="line">更新：bash go.sh</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><p>配置文件：/etc/v2ray/config.json<a href="https://www.hijk.pw/v2ray-multiple-users/" target="_blank" rel="noopener">多用户配置参考</a></p>
+<span class="label danger">（格式格式格式！！！另外别忘了防火墙打开相应端口）</span>
+
+
+</li>
+</ol>
+<ol start="5">
+<li>加速配置：<a href="http://loukky.com/archives/479" target="_blank" rel="noopener">[参考]</a> 经测试魔改BBR比较好用</li>
+</ol>
+<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><p><a href="https://www.hijk.pw/centos-one-click-install-v2ray/" target="_blank" rel="noopener">参考最后客户端下载</a></p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>V2RAY</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给我来一杯JAVA不加糖</title>
+    <url>/2020/02/27/java-book/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;记录廖雪峰老师<a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1255876875896416" target="_blank" rel="noopener">Java教程</a>的一些注意点。</p>
+<a id="more"></a>
+
+<h2 id="Java快速入门"><a href="#Java快速入门" class="headerlink" title="Java快速入门"></a>Java快速入门</h2><ul>
+<li>引用型：指向，相等判断</li>
+<li>JAVA12以后的新特性：switch语句</li>
+<li>for each循环</li>
+</ul>
+<h2 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h2><h3 id="面向对象基础"><a href="#面向对象基础" class="headerlink" title="面向对象基础"></a>面向对象基础</h3><ul>
+<li>基本类型与引用类型参数绑定的区别</li>
+<li>如果父类没有默认的构造方法，子类就必须显式调用super()并给出参数以便让编译器定位到父类的一个合适的构造方法</li>
+<li>向上转型与向下转型：一个引用类型为Person的变量，能否指向Student类型的实例？<br>instanceof操作符，可以先判断一个实例究竟是不是某种类型，举个例子：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Object obj = <span class="string">"hello"</span>;</span><br><span class="line"><span class="keyword">if</span> (obj <span class="keyword">instanceof</span> String) &#123;</span><br><span class="line">    String s = (String) obj;</span><br><span class="line">    System.out.println(s.toUpperCase());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Java的实例方法调用是基于运行时的实际类型的动态调用，而非变量的声明类型。这个非常重要的特性在面向对象编程中称之为多态。举例:</li>
+</ul>
+<figure class="highlight java"><figcaption><span>Polymorphic</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 给一个有普通收入、工资收入和享受国务院特殊津贴的小伙伴算税:</span></span><br><span class="line">        Income[] incomes = <span class="keyword">new</span> Income[] &#123;</span><br><span class="line">            <span class="keyword">new</span> Income(<span class="number">3000</span>),</span><br><span class="line">            <span class="keyword">new</span> Salary(<span class="number">7500</span>),</span><br><span class="line">            <span class="keyword">new</span> StateCouncilSpecialAllowance(<span class="number">15000</span>)</span><br><span class="line">        &#125;;</span><br><span class="line">        System.out.println(totalTax(incomes));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">totalTax</span><span class="params">(Income... incomes)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">double</span> total = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (Income income: incomes) &#123;</span><br><span class="line">            total = total + income.getTax();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> total;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Income</span> </span>&#123;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">double</span> income;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Income</span><span class="params">(<span class="keyword">double</span> income)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.income = income;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getTax</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> income * <span class="number">0.1</span>; <span class="comment">// 税率10%</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Salary</span> <span class="keyword">extends</span> <span class="title">Income</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Salary</span><span class="params">(<span class="keyword">double</span> income)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(income);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getTax</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (income &lt;= <span class="number">5000</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> (income - <span class="number">5000</span>) * <span class="number">0.2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">StateCouncilSpecialAllowance</span> <span class="keyword">extends</span> <span class="title">Income</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">StateCouncilSpecialAllowance</span><span class="params">(<span class="keyword">double</span> income)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(income);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getTax</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>无法实例化的抽象类有什么用？因为抽象类本身被设计成只能用于被继承，因此，抽象类可以强迫子类实现其定义的抽象方法，否则编译会报错。因此，抽象方法实际上相当于定义了“规范”。(抽象类可以有非抽象方法)</li>
+<li>所谓interface，就是比抽象类还要抽象的纯抽象接口，因为它连字段都不能有,当一个具体的class去实现一个interface时，需要使用implements关键字。</li>
+<li>在Java中，一个类只能继承自另一个类，不能从多个类继承。但是，一个类可以实现多个interface</li>
+</ul>
+<p>抽象类和接口的对比如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">abstract class</th>
+<th align="center">interface</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">继承</td>
+<td align="center">只能extends一个class</td>
+<td align="center">可以implements多个interface</td>
+</tr>
+<tr>
+<td align="center">字段</td>
+<td align="center">可以定义实例字段</td>
+<td align="center">不能定义实例字段</td>
+</tr>
+<tr>
+<td align="center">抽象方法</td>
+<td align="center">可以定义抽象方法</td>
+<td align="center">可以定义抽象方法</td>
+</tr>
+<tr>
+<td align="center">非抽象方法</td>
+<td align="center">可以定义非抽象方法</td>
+<td align="center">可以定义default方法</td>
+</tr>
+</tbody></table>
+<ul>
+<li>default方法和抽象类的普通方法是有所不同的。因为interface没有字段，default方法无法访问字段，而抽象类的普通方法可以访问实例字段</li>
+<li>实例字段在每个实例中都有自己的一个独立“空间”，但是静态字段只有一个共享“空间”，所有实例都会共享该字段</li>
+<li>因为静态方法属于class而不属于实例，因此，静态方法内部，无法访问this变量，也无法访问实例字段，它只能访问静态字段</li>
+<li>interface是可以有静态字段的，并且静态字段必须为final类型</li>
+<li>如果小军写了一个Arrays类，恰好JDK也自带了一个Arrays类，如何解决类名冲突？在Java中，我们使用package来解决名字冲突</li>
+<li>为了避免名字冲突，我们需要确定唯一的包名。推荐的做法是使用倒置的域名来确保唯一性</li>
+<li>一个.java文件只能包含一个public类，但可以包含多个非public类。如果有public类，文件名必须和public类的名字相同 </li>
+<li>从Java 9开始引入的模块，主要是为了解决“依赖”这个问题。如果a.jar必须依赖另一个b.jar才能运行，那我们应该给a.jar加点说明啥的，让程序在编译和运行的时候能自动定位到b.jar，这种自带“依赖关系”的class容器就是模块</li>
+<li>使用模块可以按需打包JRE；使用模块对类的访问权限有了进一步限制<span class="label info">（现在用的jdk1.8不支持模块，准备在服务器上做打包模块和JRE的实验）</span>
+
+</li>
+</ul>
+<h3 id="Java核心类"><a href="#Java核心类" class="headerlink" title="Java核心类"></a>Java核心类</h3><h4 id="字符串和编码"><a href="#字符串和编码" class="headerlink" title="字符串和编码"></a>字符串和编码</h4><ul>
+<li>Java字符串的一个重要特点就是字符串不可变。这种不可变性是通过内部的private final char[]字段，以及没有任何修改char[]的方法实现的</li>
+<li>当我们想要比较两个字符串是否相同时，要特别注意，我们实际上是想比较字符串的内容是否相同。必须使用equals()方法而不能用==</li>
+<li>通过new String(char[])创建新的String实例时，它并不会直接引用传入的char[]数组，而是会复制一份，所以，修改外部的char[]数组不会影响String实例内部的char[]数组，因为这是两个不同的数组</li>
+<li>从String的不变性设计可以看出，如果传入的对象有可能改变，我们需要复制而不是直接引用，例如：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] scores = <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; <span class="number">88</span>, <span class="number">77</span>, <span class="number">51</span>, <span class="number">66</span> &#125;;</span><br><span class="line">        Score s = <span class="keyword">new</span> Score(scores);</span><br><span class="line">        s.printScores();</span><br><span class="line">        scores[<span class="number">2</span>] = <span class="number">99</span>;</span><br><span class="line">        s.printScores();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Score</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] scores;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Score</span><span class="params">(<span class="keyword">final</span> <span class="keyword">int</span>[] scores)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.scores = scores;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printScores</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(Arrays.toString(scores));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note warning">
+            <p>此处已经更改加上final,但是结果并不是预期的那样，原因是对final理解错误。final是引用不能改，并不是内容不能改，即无法重新指向，但是可以更改其内容。正确改法：this.scores = scores.clone();</p>
+          </div>
+
+<h4 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a>StringBuilder</h4><ul>
+<li>为了能高效拼接字符串，Java标准库提供了StringBuilder，它是一个可变对象，可以预分配缓冲区，这样，往StringBuilder中新增字符时，不会创建新的临时对象</li>
+</ul>
+<h4 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h4><h4 id="包装类型"><a href="#包装类型" class="headerlink" title="包装类型"></a>包装类型</h4><table>
+<thead>
+<tr>
+<th align="center">基本类型</th>
+<th align="center">对应的引用类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">boolean</td>
+<td align="center">java.lang.Boolean</td>
+</tr>
+<tr>
+<td align="center">byte</td>
+<td align="center">java.lang.Byte</td>
+</tr>
+<tr>
+<td align="center">short</td>
+<td align="center">java.lang.Short</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center">java.lang.Integer</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">java.lang.Long</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">java.lang.Float</td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="center">java.lang.Double</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center">java.lang.Character</td>
+</tr>
+</tbody></table>
+<h4 id="JavaBean"><a href="#JavaBean" class="headerlink" title="JavaBean"></a>JavaBean</h4><ul>
+<li>JavaBean是一种符合命名规范的class，它通过getter和setter来定义属性,使用Introspector.getBeanInfo()可以获取属性列表</li>
+</ul>
+<h4 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h4><ul>
+<li>enum类型的每个常量在JVM中只有一个唯一实例，所以可以直接用==比较</li>
+<li>可以为enum编写构造方法、字段和方法；enum的构造方法要声明为private，字段强烈建议声明为final；enum适合用在switch语句中</li>
+</ul>
+<h4 id="BigInteger-amp-BigDecimal"><a href="#BigInteger-amp-BigDecimal" class="headerlink" title="BigInteger &amp; BigDecimal"></a>BigInteger &amp; BigDecimal</h4><ul>
+<li>总是使用compareTo()比较两个BigDecimal的值，不要使用equals()</li>
+</ul>
+<h4 id="常用工具类"><a href="#常用工具类" class="headerlink" title="常用工具类"></a>常用工具类</h4><ul>
+<li>如果我们要生成一个区间在[MIN, MAX)的随机数，可以借助Math.random()实现，或者直接用Random实例方法XXXnext（指定）</li>
+<li>如果我们在创建Random实例时指定一个种子，就会得到完全确定的随机数序列，即所谓伪随机数，是指只要给定一个初始的种子，产生的随机数序列是完全一样的</li>
+<li>需要使用安全随机数的时候，必须使用SecureRandom，绝不能使用Random</li>
+</ul>
+<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><ul>
+<li>Java规定：必须捕获的异常，包括Exception及其子类，但不包括RuntimeException及其子类，这种类型的异常称为Checked Exception；不需要捕获的异常，包括Error及其子类，RuntimeException及其子类</li>
+<li>在方法定义的时候，使用throws Xxx表示该方法可能抛出的异常类型。调用方在调用的时候，必须强制捕获这些异常，否则编译器会报错</li>
+<li>所有异常都可以调用printStackTrace()方法打印异常栈，这是一个简单有用的快速打印异常的方法</li>
+<li>存在多个catch的时候，catch的顺序非常重要：子类必须写在前面</li>
+<li>为了能追踪到完整的异常栈，在构造异常的时候，把原始的Exception实例传进去，新的Exception就可以持有原始Exception信息</li>
+<li>通常不要在finally中抛出异常。如果在finally中抛出异常，应该原始异常加入到原有异常中。调用方可通过Throwable.getSuppressed()获取所有添加的Suppressed Exception</li>
+<li>Java断言的特点是：断言失败时会抛出AssertionError，导致程序结束退出。因此，断言不能用于可恢复的程序错误，只应该用于开发和测试阶段</li>
+<li>JVM默认关闭断言指令，即遇到assert语句就自动忽略了，不执行。要执行assert语句，必须给Java虚拟机传递-enableassertions（可简写为-</li>
+<li>日志就是Logging，它的目的是为了取代System.out.println() <span class="label warning">需作进一步了解</span></li>
+</ul>
+<h2 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h2><ul>
+<li>反射就是Reflection，Java的反射是指程序在运行期可以拿到一个对象的所有信息，反射是为了解决在运行期，对某个实例一无所知的情况下，如何调用其方法</li>
+<li>由于JVM为每个加载的class创建了对应的Class实例，并在实例中保存了该class的所有信息，包括类名、包名、父类、实现的接口、所有方法、字段等，因此，如果获取了某个Class实例，我们就可以通过这个Class实例获取到该实例对应的class的所有信息。这种通过Class实例获取class信息的方法称为反射（Reflection）</li>
+<li>通常情况下，我们应该用instanceof判断数据类型，因为面向抽象编程的时候，我们不关心具体的子类型。只有在需要精确判断一个类型是不是某个class的时候，我们才使用==判断class实例</li>
+<li>动态加载class的特性对于Java程序非常重要。利用JVM动态加载class的特性，我们才能在运行期根据条件加载不同的实现类</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录一次配置环境跑通spring boot项目</title>
+    <url>/2020/02/29/debug_springboot/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;遇到的问题：maven的依赖配置，数据库版本问题</p>
+<a id="more"></a>
+
+<h2 id="maven配置"><a href="#maven配置" class="headerlink" title="maven配置"></a>maven配置</h2><ol>
+<li>配置环境变量</li>
+<li>配置本地仓库</li>
+<li>修改镜像</li>
+<li>修改在IntelliJ IDEA中的配置</li>
+</ol>
+<p>参考：<a href="https://www.cnblogs.com/telwanggs/p/10820701.html" target="_blank" rel="noopener">1</a>/<a href="https://www.cnblogs.com/weixinyu98/p/9856804.html" target="_blank" rel="noopener">2</a>/<a href="https://www.cnblogs.com/wanson/articles/9415622.html" target="_blank" rel="noopener">3</a></p>
+<h2 id="更改数据库依赖"><a href="#更改数据库依赖" class="headerlink" title="更改数据库依赖"></a>更改数据库依赖</h2><ol>
+<li>将依赖改成自己数据库的版本</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">scope</span>&gt;</span>8.0.13<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>很奇怪reimport总是匹配该项目默认版本，只是后面括号追加了更改版本</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/sql_bug.png" alt=""></p>
+<p>最后解决方法是：删除默认版本，在依赖中手动添加上自己的版本</p>
+<div class="note success">
+            <p>修改相应数据库链接配置后，成功跑通！！😄</p>
+          </div>]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>IntelliJ IDEA</tag>
+        <tag>maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim编辑器的使用</title>
+    <url>/2020/02/26/use_of_vim/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;很多人都找到了拥有他们所喜爱特性的编辑器，并成为了这款编辑器的死忠粉丝，我选择vim。</p>
+<a id="more"></a>
+
+<h2 id="2020-2-26"><a href="#2020-2-26" class="headerlink" title="2020.2.26"></a>2020.2.26</h2><ul>
+<li><p><a href="http://raksmart.idcspy.com/3939" target="_blank" rel="noopener">vim安装</a></p>
+</li>
+<li><p>vim编辑器在内存缓冲区中处理数据</p>
+</li>
+<li><p>回顾命令：</p>
+</li>
+</ul>
+<ol>
+<li>恢复上一步操作:  u</li>
+<li>高亮显示已选内容： v</li>
+<li>删除当前光标所在行： dd</li>
+<li>可理解为剪切操作：  dd + p</li>
+<li>复制单词： yw</li>
+<li>复制到行尾：  y$</li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一开始只有小吴</title>
+    <url>/2020/02/06/test-writting/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;在很久很久以前的一个冬天，所有人都不能出门，包括小吴。<a id="more"></a>小吴在哪里？小吴躺在床上鸭。小吴身上开始张小蘑菇，每天都长哒。今天的小吴，头上的蘑菇又长长了一厘米，小吴开心鸭。因为小吴就是小吴呀！小吴说过，不会离开的，对哒。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用VPS搭梯子</title>
+    <url>/2020/02/16/debug-vps/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;国内gihub源码下载到本地缓慢可以通过码云间接下载解决，可是对于发行版软件却行不通，索性通过科学上网一劳永逸。</p>
+<a id="more"></a>
+
+<h3 id="VPS选择与购买"><a href="#VPS选择与购买" class="headerlink" title="VPS选择与购买"></a>VPS选择与购买</h3><p>我自己最后选择的是Hostwinds，主要是因为可以随时免费更改IP。参数如下：</p>
+<div class="note no-icon">
+            <center>1 Cores / 1 GB / 30 GB SSD / Seattle / CentOS 7</center>
+          </div>
+
+<ul>
+<li><p>VPS：Virtual Private Server 虚拟专用服务器,一般是将一个独立服务器通过虚拟化技术虚拟成多个虚拟专用服务器。<a href="https://cn.hostgator.com/news/product/vps/3957.html" target="_blank" rel="noopener">VPS与VPN的区别</a></p>
+</li>
+<li><p>详情参考：<a href="https://www.anspoon.com/hostwinds-ssr-7330.html" target="_blank" rel="noopener">使用Hostwinds一键搭建SSR教程</a></p>
+</li>
+<li><p>VPS测评与推荐：<a href="https://www.10besty.com/best-vps-hosting-services/#one" target="_blank" rel="noopener">2020最好的国外VPS推荐</a></p>
+</li>
+</ul>
+<h3 id="SSR多端口配置"><a href="#SSR多端口配置" class="headerlink" title="SSR多端口配置"></a>SSR多端口配置</h3><p>刚开始只开一个端口，连接成功随机一段时间后就突然连不上了，查看日志发现如下错误：</p>
+<figure class="highlight bash"><figcaption><span>/var/log/shadowsocks.log</span></figcaption><table><tr><td class="code"><pre><span class="line">2020-02-15 21:51:23 ERROR tcprelay.py:1097 can not parse header when handling connection from ::ffff:221.13.12.58:57006</span><br><span class="line">2020-02-16 09:45:56 WARNING common.py:250 unsupported addrtype 23, maybe wrong password or encryption method</span><br><span class="line">2020-02-16 09:45:56 WARNING tcprelay.py:521 Protocol ERROR, TCP ogn data 595478e81222c889ee23229241b1a4ad3ffda112a58260e82921d7e6a519b14bcdc5242659fe6638c……</span><br><span class="line">2020-02-16 09:45:56 ERROR tcprelay.py:1097 can not parse header when handling connection from ::ffff:123.232.225.58:55674</span><br></pre></td></tr></table></figure>
+
+<p>谷歌无果（若能帮我解决请留言感激不尽），但是发现重新启动SSR可以解决这个问题，后来又尝试多开几个端口换着用，简单记录一下过程(<a href="https://www.itrhx.com/2020/01/10/A61-build-a-SSR-server-with-VPS/" target="_blank" rel="noopener">参考</a>)：</p>
+<ol>
+<li>修改/etc/shadowsocks.json配置</li>
+<li>修改/etc/firewall/zones/public.xml加入端口</li>
+<li>防火墙重新载入</li>
+<li>重启SSR服务</li>
+</ol>
+<figure class="highlight bash"><figcaption><span>防火墙相关命令</span></figcaption><table><tr><td class="code"><pre><span class="line">重启：firewall-cmd --reload</span><br><span class="line">查看所有打开的端口： firewall-cmd --zone=public --list-ports</span><br><span class="line">添加：firewall-cmd --zone=public --add-port=80/tcp --permanent</span><br><span class="line">查看：firewall-cmd --zone=public --query-port=80/tcp</span><br><span class="line">删除：firewall-cmd --zone=public --remove-port=80/tcp --permanent</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>SSR常用命令</span></figcaption><table><tr><td class="code"><pre><span class="line">启动：/etc/init.d/shadowsocks start</span><br><span class="line">停止：/etc/init.d/shadowsocks stop</span><br><span class="line">重启：/etc/init.d/shadowsocks restart</span><br><span class="line">状态：/etc/init.d/shadowsocks status</span><br><span class="line">卸载：./shadowsocks-all.sh uninstall</span><br><span class="line">更改配置参数：vim /etc/shadowsocks.json</span><br></pre></td></tr></table></figure>
+
+<span class="label warning">使用SSR之前请先关闭其他代理，比如谷歌访问助手</span>
+
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>VPS</tag>
+      </tags>
+  </entry>
+</search>
