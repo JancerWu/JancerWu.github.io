@@ -5,9 +5,21 @@
     <url>/2020/07/27/rebuild/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>整理一下windows环境下常用软件的安装及配置</p>
 <a id="more"></a>
-<h2 id="win10原始功能"><a href="#win10原始功能" class="headerlink" title="win10原始功能"></a>win10原始功能</h2><p>传送门:</p>
-<ol>
-<li><a href="https://zhuanlan.zhihu.com/p/87826480" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/87826480</a></li>
+<h2 id="Win10原始功能及设置"><a href="#Win10原始功能及设置" class="headerlink" title="Win10原始功能及设置"></a>Win10原始功能及设置</h2><ol>
+<li><a href="https://zhuanlan.zhihu.com/p/87826480" target="_blank" rel="noopener">剪贴板等</a></li>
+<li>电脑开启休眠模式</li>
+<li>新机用户名设置中文真的是欢乐无限</li>
+<li>Windows Defender够用了,删除一切无用软件</li>
+</ol>
+<h2 id="家中常备软件"><a href="#家中常备软件" class="headerlink" title="家中常备软件"></a>家中常备软件</h2><ol>
+<li>Geek</li>
+<li>7-zip</li>
+<li>Sublime(<a href="https://godweiyang.com/2017/10/02/sublime/" target="_blank" rel="noopener">配置</a>)</li>
+<li>Google Chrome</li>
+</ol>
+<h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><ol>
+<li>IDEA(<a href="https://github.com/judasn/IntelliJ-IDEA-Tutorial" target="_blank" rel="noopener">中文</a>/<a href="https://www.jetbrains.com/help/idea/discover-intellij-idea.html" target="_blank" rel="noopener">英文</a>)</li>
+<li>Git(<a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">娓娓道来</a>/<a href="https://www.cnblogs.com/mingyue5826/p/11141324.html" target="_blank" rel="noopener">配置</a>)</li>
 </ol>
 ]]></content>
       <categories>
