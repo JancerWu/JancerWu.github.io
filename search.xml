@@ -14,12 +14,14 @@
 <h2 id="家中常备软件"><a href="#家中常备软件" class="headerlink" title="家中常备软件"></a>家中常备软件</h2><ol>
 <li>Geek</li>
 <li>7-zip</li>
-<li>Sublime(<a href="https://godweiyang.com/2017/10/02/sublime/" target="_blank" rel="noopener">配置</a>)</li>
+<li>Sublime (<a href="https://godweiyang.com/2017/10/02/sublime/" target="_blank" rel="noopener">配置</a>)</li>
 <li>Google Chrome</li>
 </ol>
 <h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><ol>
-<li>IDEA(<a href="https://github.com/judasn/IntelliJ-IDEA-Tutorial" target="_blank" rel="noopener">中文</a>/<a href="https://www.jetbrains.com/help/idea/discover-intellij-idea.html" target="_blank" rel="noopener">英文</a>)</li>
-<li>Git(<a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">娓娓道来</a>/<a href="https://www.cnblogs.com/mingyue5826/p/11141324.html" target="_blank" rel="noopener">配置</a>)</li>
+<li>IDEA (<a href="https://github.com/judasn/IntelliJ-IDEA-Tutorial" target="_blank" rel="noopener">中文</a> / <a href="https://www.jetbrains.com/help/idea/discover-intellij-idea.html" target="_blank" rel="noopener">英文</a>)</li>
+<li>Git (<a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">娓娓道来</a> / <a href="https://www.cnblogs.com/mingyue5826/p/11141324.html" target="_blank" rel="noopener">配置</a>)</li>
+<li>VSCode (<a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks" target="_blank" rel="noopener">英文</a> / <a href="https://mp.weixin.qq.com/s/OODjfax086yQiF0rkIv55w" target="_blank" rel="noopener">中文书</a>)</li>
+<li>Anaconda</li>
 </ol>
 ]]></content>
       <categories>
@@ -48,7 +50,7 @@
 <ol start="5">
 <li>权重向量的设置，邻域子问题改进点：自适应</li>
 </ol>
-]]></content>
+<h2 id="框架平台"><a href="#框架平台" class="headerlink" title="框架平台"></a>框架平台</h2><h3 id="jMetal"><a href="#jMetal" class="headerlink" title="jMetal"></a>jMetal</h3><h3 id="PlatEMO"><a href="#PlatEMO" class="headerlink" title="PlatEMO"></a>PlatEMO</h3>]]></content>
       <categories>
         <category>算法</category>
       </categories>
@@ -182,9 +184,9 @@
         <category>数据结构与算法</category>
       </categories>
       <tags>
-        <tag>CSP</tag>
-        <tag>PAT</tag>
         <tag>LeetCode</tag>
+        <tag>PAT</tag>
+        <tag>CSP</tag>
       </tags>
   </entry>
   <entry>
@@ -738,8 +740,8 @@
 </ol>
 <h2 id="第-4-章-更多的bash-shell命令"><a href="#第-4-章-更多的bash-shell命令" class="headerlink" title="第 4 章 更多的bash shell命令"></a>第 4 章 更多的bash shell命令</h2>]]></content>
       <categories>
-        <category>linux</category>
         <category>读书笔记</category>
+        <category>linux</category>
         <category>shell</category>
       </categories>
       <tags>
