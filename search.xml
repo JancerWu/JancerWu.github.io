@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>深度学习入门资料</title>
+    <url>/2020/08/22/deepLearning/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>吴恩达老师的深度学习课程及相关资料</p>
+<a id="more"></a>
+<ol>
+<li><p>黄广海老师的笔记<br><a href="http://www.ai-start.com/dl2017/" target="_blank" rel="noopener">http://www.ai-start.com/dl2017/</a></p>
+</li>
+<li><p>B站搬运大佬-&gt;课程地址:<br>神经网络与深度学习:<br><a href="https://www.bilibili.com/video/av66314465/" target="_blank" rel="noopener">https://www.bilibili.com/video/av66314465/</a><br>改善深层神经网络:超参数调试,正则化以及优化:<br><a href="https://www.bilibili.com/video/av66524657/" target="_blank" rel="noopener">https://www.bilibili.com/video/av66524657/</a><br>结构化神经学习项目:<br><a href="https://www.bilibili.com/video/av66644404/" target="_blank" rel="noopener">https://www.bilibili.com/video/av66644404/</a><br>卷积神经网络:<br><a href="https://www.bilibili.com/video/av66646276/" target="_blank" rel="noopener">https://www.bilibili.com/video/av66646276/</a><br>序列模型:<br><a href="https://www.bilibili.com/video/av66647398/" target="_blank" rel="noopener">https://www.bilibili.com/video/av66647398/</a></p>
+</li>
+</ol>
+<ul>
+<li>课后作业版本一：<br><a href="https://www.kesci.com/home/project/5e20243e2823a10036b542da" target="_blank" rel="noopener">https://www.kesci.com/home/project/5e20243e2823a10036b542da</a></li>
+<li>课后作业版本二：<br><a href="https://blog.csdn.net/u013733326/article/details/79827273" target="_blank" rel="noopener">https://blog.csdn.net/u013733326/article/details/79827273</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>人工智能</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于分解的多目标进化算法</title>
+    <url>/2020/07/15/MOEA-D-DE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>基于分解的多目标进化算法即MOEA/D(DE)的学习整理</p>
+<a id="more"></a>
+
+<h2 id="09年MOEA-D-DE算法论文"><a href="#09年MOEA-D-DE算法论文" class="headerlink" title="09年MOEA/D-DE算法论文"></a>09年MOEA/D-DE算法论文</h2><ol>
+<li>切比雪夫分解方法的原理</li>
+<li>为什么分解后的子问题的解是原问题的解，即一个向量对应一个原来的解</li>
+<li>SBX模拟二进制交叉算子的原理</li>
+<li>MOEA/D-DE的基本过程：</li>
+</ol>
+<div class="note no-icon">
+            <ol><li>初始化：T邻域计算，随机种群，参考点Z </li><li>更新（N轮）：<br> ① 确定选择范围（一定低概率从所有父种群中选择）<br> ② DE算子生成新解<br> ③ 变异算子处理<br> ④ 边界检查及修复<br> ⑤ 更新参考点<br> ⑥ 替换解（限制大小）</li><li>停止准则<br>（括号内为保持种群多样性的两个策略）</li></ol>
+          </div>
+
+<ol start="5">
+<li>权重向量的设置，邻域子问题改进点：自适应</li>
+</ol>
+<h2 id="框架平台"><a href="#框架平台" class="headerlink" title="框架平台"></a>框架平台</h2><h3 id="jMetal"><a href="#jMetal" class="headerlink" title="jMetal"></a><a href="https://jmetal.readthedocs.io/en/latest/" target="_blank" rel="noopener">jMetal</a></h3><h3 id="PlatEMO"><a href="#PlatEMO" class="headerlink" title="PlatEMO"></a>PlatEMO</h3>]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>MOEA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>WIN环境下的软件安装指南</title>
     <url>/2020/07/27/rebuild/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>整理一下windows环境下常用软件的安装及配置</p>
@@ -29,33 +79,6 @@
       </categories>
       <tags>
         <tag>windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于分解的多目标进化算法</title>
-    <url>/2020/07/15/MOEA-D-DE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>基于分解的多目标进化算法即MOEA/D(DE)的学习整理</p>
-<a id="more"></a>
-
-<h2 id="09年MOEA-D-DE算法论文"><a href="#09年MOEA-D-DE算法论文" class="headerlink" title="09年MOEA/D-DE算法论文"></a>09年MOEA/D-DE算法论文</h2><ol>
-<li>切比雪夫分解方法的原理</li>
-<li>为什么分解后的子问题的解是原问题的解，即一个向量对应一个原来的解</li>
-<li>SBX模拟二进制交叉算子的原理</li>
-<li>MOEA/D-DE的基本过程：</li>
-</ol>
-<div class="note no-icon">
-            <ol><li>初始化：T邻域计算，随机种群，参考点Z </li><li>更新（N轮）：<br> ① 确定选择范围（一定低概率从所有父种群中选择）<br> ② DE算子生成新解<br> ③ 变异算子处理<br> ④ 边界检查及修复<br> ⑤ 更新参考点<br> ⑥ 替换解（限制大小）</li><li>停止准则<br>（括号内为保持种群多样性的两个策略）</li></ol>
-          </div>
-
-<ol start="5">
-<li>权重向量的设置，邻域子问题改进点：自适应</li>
-</ol>
-<h2 id="框架平台"><a href="#框架平台" class="headerlink" title="框架平台"></a>框架平台</h2><h3 id="jMetal"><a href="#jMetal" class="headerlink" title="jMetal"></a>jMetal</h3><h3 id="PlatEMO"><a href="#PlatEMO" class="headerlink" title="PlatEMO"></a>PlatEMO</h3>]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>MOEA</tag>
       </tags>
   </entry>
   <entry>
@@ -184,9 +207,9 @@
         <category>数据结构与算法</category>
       </categories>
       <tags>
-        <tag>LeetCode</tag>
-        <tag>PAT</tag>
         <tag>CSP</tag>
+        <tag>PAT</tag>
+        <tag>LeetCode</tag>
       </tags>
   </entry>
   <entry>
@@ -558,8 +581,8 @@
 <p>3.由linux的ssh远程登陆引发的一系列网络安全以及密码学问题<br>4.git的使用只看到了冰山一角<br>5.影响VPS网速的因素研究</p>
 ]]></content>
       <categories>
-        <category>计算机网络</category>
         <category>linux</category>
+        <category>计算机网络</category>
       </categories>
       <tags>
         <tag>Trojan</tag>
@@ -740,8 +763,8 @@
 </ol>
 <h2 id="第-4-章-更多的bash-shell命令"><a href="#第-4-章-更多的bash-shell命令" class="headerlink" title="第 4 章 更多的bash shell命令"></a>第 4 章 更多的bash shell命令</h2>]]></content>
       <categories>
-        <category>读书笔记</category>
         <category>linux</category>
+        <category>读书笔记</category>
         <category>shell</category>
       </categories>
       <tags>
@@ -781,8 +804,8 @@
 <h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><p><a href="https://www.hijk.pw/centos-one-click-install-v2ray/" target="_blank" rel="noopener">参考最后客户端下载</a></p>
 ]]></content>
       <categories>
-        <category>计算机网络</category>
         <category>linux</category>
+        <category>计算机网络</category>
       </categories>
       <tags>
         <tag>V2RAY</tag>
@@ -1067,8 +1090,8 @@
 
 ]]></content>
       <categories>
-        <category>计算机网络</category>
         <category>linux</category>
+        <category>计算机网络</category>
       </categories>
       <tags>
         <tag>VPS</tag>
