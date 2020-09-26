@@ -213,8 +213,8 @@
         <category>数据结构与算法</category>
       </categories>
       <tags>
-        <tag>CSP</tag>
         <tag>PAT</tag>
+        <tag>CSP</tag>
         <tag>LeetCode</tag>
       </tags>
   </entry>
@@ -587,8 +587,8 @@
 <p>3.由linux的ssh远程登陆引发的一系列网络安全以及密码学问题<br>4.git的使用只看到了冰山一角<br>5.影响VPS网速的因素研究</p>
 ]]></content>
       <categories>
-        <category>linux</category>
         <category>计算机网络</category>
+        <category>linux</category>
       </categories>
       <tags>
         <tag>Trojan</tag>
@@ -769,8 +769,8 @@
 </ol>
 <h2 id="第-4-章-更多的bash-shell命令"><a href="#第-4-章-更多的bash-shell命令" class="headerlink" title="第 4 章 更多的bash shell命令"></a>第 4 章 更多的bash shell命令</h2>]]></content>
       <categories>
-        <category>linux</category>
         <category>读书笔记</category>
+        <category>linux</category>
         <category>shell</category>
       </categories>
       <tags>
@@ -810,8 +810,8 @@
 <h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><p><a href="https://www.hijk.pw/centos-one-click-install-v2ray/" target="_blank" rel="noopener">参考最后客户端下载</a></p>
 ]]></content>
       <categories>
-        <category>linux</category>
         <category>计算机网络</category>
+        <category>linux</category>
       </categories>
       <tags>
         <tag>V2RAY</tag>
@@ -1096,8 +1096,8 @@
 
 ]]></content>
       <categories>
-        <category>linux</category>
         <category>计算机网络</category>
+        <category>linux</category>
       </categories>
       <tags>
         <tag>VPS</tag>
