@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>探索世界的方法</title>
+    <url>/2020/10/12/vps-share/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>:D</p>
+<a id="more"></a>
+<h3 id="PC端使用方法"><a href="#PC端使用方法" class="headerlink" title="PC端使用方法"></a>PC端使用方法</h3><p>1.下载qt5 -&gt; <a href="https://shijiezyw.lanzous.com/iQ78Pdht12h" target="_blank" rel="noopener">传送门</a><br>2.创建trojan连接：选择第三个手动添加trojan连接，只需要填服务器地址和密钥两个位置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/trojanPC.jpg" alt="手动添加trojan连接"></p>
+<p>3.很重要的最后几步哦：<br>①关闭所有其他代理如谷歌访问助手<br>②右键点击屏幕右下角绿色的小马，选择PAC模式绕过大陆</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/changemode.jpg" alt=""></p>
+<p>4.愉快探索世界</p>
+<h3 id="安卓端使用方法"><a href="#安卓端使用方法" class="headerlink" title="安卓端使用方法"></a>安卓端使用方法</h3><p>1.下载igniter -&gt;<a href="https://github.com/trojan-gfw/igniter/releases" target="_blank" rel="noopener">传送门</a>要用魔法打败魔法hhh,没有魔法的自己找<br>2.和qt5一样傻瓜式配置，直接填上域名和密钥就搞定了，app右上角自带测试是否连接成功</p>
+<h3 id="那么问题来了，去哪里找地址和密钥呢？？"><a href="#那么问题来了，去哪里找地址和密钥呢？？" class="headerlink" title="那么问题来了，去哪里找地址和密钥呢？？"></a>那么问题来了，去哪里找地址和密钥呢？？</h3>]]></content>
+  </entry>
+  <entry>
     <title>深度学习入门资料</title>
     <url>/2020/08/22/deepLearning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>吴恩达老师的深度学习课程及相关资料</p>
@@ -213,8 +226,8 @@
         <category>数据结构与算法</category>
       </categories>
       <tags>
-        <tag>PAT</tag>
         <tag>CSP</tag>
+        <tag>PAT</tag>
         <tag>LeetCode</tag>
       </tags>
   </entry>
@@ -587,8 +600,8 @@
 <p>3.由linux的ssh远程登陆引发的一系列网络安全以及密码学问题<br>4.git的使用只看到了冰山一角<br>5.影响VPS网速的因素研究</p>
 ]]></content>
       <categories>
-        <category>计算机网络</category>
         <category>linux</category>
+        <category>计算机网络</category>
       </categories>
       <tags>
         <tag>Trojan</tag>
@@ -769,8 +782,8 @@
 </ol>
 <h2 id="第-4-章-更多的bash-shell命令"><a href="#第-4-章-更多的bash-shell命令" class="headerlink" title="第 4 章 更多的bash shell命令"></a>第 4 章 更多的bash shell命令</h2>]]></content>
       <categories>
-        <category>读书笔记</category>
         <category>linux</category>
+        <category>读书笔记</category>
         <category>shell</category>
       </categories>
       <tags>
@@ -810,8 +823,8 @@
 <h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><p><a href="https://www.hijk.pw/centos-one-click-install-v2ray/" target="_blank" rel="noopener">参考最后客户端下载</a></p>
 ]]></content>
       <categories>
-        <category>计算机网络</category>
         <category>linux</category>
+        <category>计算机网络</category>
       </categories>
       <tags>
         <tag>V2RAY</tag>
@@ -1096,8 +1109,8 @@
 
 ]]></content>
       <categories>
-        <category>计算机网络</category>
         <category>linux</category>
+        <category>计算机网络</category>
       </categories>
       <tags>
         <tag>VPS</tag>
