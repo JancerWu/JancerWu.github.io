@@ -1288,7 +1288,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #53ebdb;
+  background: #7e3cff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2883,4 +2883,10 @@ ul.breadcrumb li + li:last-child {
 }
 .icon-bilibili-line:before {
   content: "\e75d";
+}
+.post-block {
+  background: rgba(255,255,255,0.6);
+}
+.comments {
+  background: rgba(255,255,255,0.6);
 }
