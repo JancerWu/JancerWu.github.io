@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>trojan</title>
+    <url>/2020/04/16/trojan/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是从ss-&gt;ssr-&gt;v2ray-&gt;trojan的折腾终章，只为畅通无阻科学上网<br>P.S.今天吃鱼不小心被鱼刺卡到，我脑袋里突然蹦出来一个形容遇到bug时十分形象的词语：如鲠在喉！！！</p>
+<a id="more"></a>
+
+<h3 id="Trojan原理"><a href="#Trojan原理" class="headerlink" title="Trojan原理"></a>Trojan原理</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/method.png" alt="原理图"></p>
+<p>英文官方文档还没看，先简单记录一下通过折腾配置体会到的：<br>Trojan思想是把自己伪装成一个持证上岗的web服务器（持有SSL证书），提供https服务（443端口）,国内的trojan客户端可以把国外的trojan服务器端作为中转访问外网，非客户端请求则通过trojan访问nginx服务器的80端口（nginx提供一个真实的静态网站服务），因此看起来和普通的加密传输的web服务器没有区别，是目前最新的扶墙技术。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>伪装也要装的像一点，索性给自己的博客挪个窝，github page稳定性自己体会……再综合上述，需要做以下工作：</p>
+<ul>
+<li>注册一个域名+SSL证书</li>
+<li>借助git搭个远程仓库</li>
+<li>安装配置nginx环境</li>
+<li>安装配置trojan环境</li>
+</ul>
+<h3 id="实践踩坑"><a href="#实践踩坑" class="headerlink" title="实践踩坑"></a>实践踩坑</h3><h4 id="注册域名与SSL证书"><a href="#注册域名与SSL证书" class="headerlink" title="注册域名与SSL证书"></a>注册域名与SSL证书</h4><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html" target="_blank" rel="noopener">互联网协议框架复习一下</a></li>
+<li><a href="https://www.ruanyifeng.com/blog/2016/06/dns.html" target="_blank" rel="noopener">DNS原理入门</a></li>
+<li><a href="https://www.jianshu.com/p/4ba39737969a" target="_blank" rel="noopener">域名填写指南</a></li>
+</ul>
+<p>提前使用了github的学生包，由namecheap提供的一年免费.me域名与SSL证书服务</p>
+<p>注意事项：<br>1.SSL服务购买后去Dashboard里面找<br><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/sslhere.png" alt="ssl"><br>2.生成私钥以及CSR：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">openssl req -<span class="keyword">new</span> -newkey rsa：<span class="number">2048</span> -nodes -keyout yoursever.key -out yoursever.csr</span><br></pre></td></tr></table></figure>
+<p>3.域名所有权验证选择第三个Domains to Validate：添加指定记录，我按要求添加后长时间没有验证成功最后无奈找国外客服，按照客服要求重新添加后解决（删除了指定的记录host里面的次级和顶级域名）</p>
+<h4 id="搭建远程git仓库（-）"><a href="#搭建远程git仓库（-）" class="headerlink" title="搭建远程git仓库（*）"></a>搭建远程git仓库（*）</h4><p>linux基础命令不牢固，导致地动山摇……梳理一下思路，有待进一步研究git用法</p>
+<p>1.新建用户ssh远程登陆(之前一直root太不安全了)<br>2.克隆github博客项目(不是源码，只是hexo部署生成的)<br>3.新建空白仓库，创建./hooks/post-receive文件，使用Git-Hooks同步网站根目录，当有Git收发的时候会调用该脚本，自动将最新内容同步到网站根目录中，post-receive中指定相应git仓库以及网站根目录</p>
+<h4 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx(*)"></a>安装nginx(*)</h4><p>网上一些教程需要配置环境解压缩包编译安装，反正我是没搞成，最后不信邪直接yum一键安装，有待进一步研究nginx</p>
+<ul>
+<li>配置文件：/etc/nginx/nginx.conf</li>
+<li>日志文件：/var/log/nginx/access.log &amp; /var/log/nginx/error.log</li>
+<li>443配置CRT证书需要将得到的两个文件合并成一个</li>
+<li>访问发现403问题可能是配置文件里面user不存在或者没有权限（权限问题是个大坑）</li>
+</ul>
+<p>上述给博客挪窝具体操作可参考：<a href="http://fisher.lazybone.xyz/%E4%BB%8Egithub%E8%BF%81%E7%A7%BBhexo%E5%8D%9A%E5%AE%A2.html" target="_blank" rel="noopener">fisher’s blog</a></p>
+<h4 id="安装trojan"><a href="#安装trojan" class="headerlink" title="安装trojan(*)"></a>安装trojan(*)</h4><p>直接官网原版压缩包安装需要自己写一些配置脚本，一番折腾后仍然是linux基础不牢地动山摇……最后还是乖乖地用别人写好的脚本一键安装，参考<a href="https://tlanyan.me/trojan-tutorial/" target="_blank" rel="noopener">tlanyan</a></p>
+<ul>
+<li>/usr/local/bin/trojan</li>
+<li>/usr/local/etc/trojan/config.json</li>
+<li>/etc/systemd/system/trojan.service</li>
+</ul>
+<p>带证书的blog与trojan伪装共用方案：<br>为了trojan的安全性，443端口必须给它，将其伪装由默认80端口改为其他任意端口，如6666，nginx做相应配置；同时，为了让blog持证上岗，但已经失去了443端口，不得已80端口硬着头皮上，在80端口上配置SSL，需要注意一点的是如果用户访问http连接的话会提示“the plain http request was sent to https”意思就是http请求转到https了，其实nginx官网认为这个是正常现象定义了个497的状态，只要在nginx配置中添加以下内容就可以搞定：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">error_page <span class="number">497</span> https:<span class="comment">//$server_name:80$request_uri;   </span></span><br><span class="line"><span class="comment">// 自动跳转域名后面会带着:80很丑也是没办法了</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h3><p>1.英文文档不要依赖谷歌一键翻译，参考一下就好，否则会出现意想不到的问题<br>2.linux基础不牢地动山摇</p>
+<ul>
+<li>用户、组及文件权限</li>
+<li>各种基础命令的熟练使用</li>
+<li>vim编辑器的快捷编辑方式</li>
+</ul>
+<p>3.由linux的ssh远程登陆引发的一系列网络安全以及密码学问题<br>4.git的使用只看到了冰山一角<br>5.影响VPS网速的因素研究</p>
+<h3 id="备忘录"><a href="#备忘录" class="headerlink" title="备忘录"></a>备忘录</h3><ol>
+<li><a href="https://github.com/Jrohy/trojan" target="_blank" rel="noopener">https://github.com/Jrohy/trojan</a></li>
+<li>nginx的安装与卸载(直接yum install/remove nginx)</li>
+</ol>
+<p>*注意用户权限！！否则无法访问<br>3. 面板端换个能用的端口，伪装端随便放个页面都行</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>Trojan</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>探索世界的方法</title>
     <url>/2020/10/12/vps-share/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>:D</p>
@@ -545,66 +610,6 @@
       </categories>
       <tags>
         <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>trojan</title>
-    <url>/2020/04/16/trojan/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是从ss-&gt;ssr-&gt;v2ray-&gt;trojan的折腾终章，只为畅通无阻科学上网<br>P.S.今天吃鱼不小心被鱼刺卡到，我脑袋里突然蹦出来一个形容遇到bug时十分形象的词语：如鲠在喉！！！</p>
-<a id="more"></a>
-
-<h3 id="Trojan原理"><a href="#Trojan原理" class="headerlink" title="Trojan原理"></a>Trojan原理</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/method.png" alt="原理图"></p>
-<p>英文官方文档还没看，先简单记录一下通过折腾配置体会到的：<br>Trojan思想是把自己伪装成一个持证上岗的web服务器（持有SSL证书），提供https服务（443端口）,国内的trojan客户端可以把国外的trojan服务器端作为中转访问外网，非客户端请求则通过trojan访问nginx服务器的80端口（nginx提供一个真实的静态网站服务），因此看起来和普通的加密传输的web服务器没有区别，是目前最新的扶墙技术。</p>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>伪装也要装的像一点，索性给自己的博客挪个窝，github page稳定性自己体会……再综合上述，需要做以下工作：</p>
-<ul>
-<li>注册一个域名+SSL证书</li>
-<li>借助git搭个远程仓库</li>
-<li>安装配置nginx环境</li>
-<li>安装配置trojan环境</li>
-</ul>
-<h3 id="实践踩坑"><a href="#实践踩坑" class="headerlink" title="实践踩坑"></a>实践踩坑</h3><h4 id="注册域名与SSL证书"><a href="#注册域名与SSL证书" class="headerlink" title="注册域名与SSL证书"></a>注册域名与SSL证书</h4><ul>
-<li><a href="http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html" target="_blank" rel="noopener">互联网协议框架复习一下</a></li>
-<li><a href="https://www.ruanyifeng.com/blog/2016/06/dns.html" target="_blank" rel="noopener">DNS原理入门</a></li>
-<li><a href="https://www.jianshu.com/p/4ba39737969a" target="_blank" rel="noopener">域名填写指南</a></li>
-</ul>
-<p>提前使用了github的学生包，由namecheap提供的一年免费.me域名与SSL证书服务</p>
-<p>注意事项：<br>1.SSL服务购买后去Dashboard里面找<br><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/sslhere.png" alt="ssl"><br>2.生成私钥以及CSR：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">openssl req -<span class="keyword">new</span> -newkey rsa：<span class="number">2048</span> -nodes -keyout yoursever.key -out yoursever.csr</span><br></pre></td></tr></table></figure>
-<p>3.域名所有权验证选择第三个Domains to Validate：添加指定记录，我按要求添加后长时间没有验证成功最后无奈找国外客服，按照客服要求重新添加后解决（删除了指定的记录host里面的次级和顶级域名）</p>
-<h4 id="搭建远程git仓库（-）"><a href="#搭建远程git仓库（-）" class="headerlink" title="搭建远程git仓库（*）"></a>搭建远程git仓库（*）</h4><p>linux基础命令不牢固，导致地动山摇……梳理一下思路，有待进一步研究git用法</p>
-<p>1.新建用户ssh远程登陆(之前一直root太不安全了)<br>2.克隆github博客项目(不是源码，只是hexo部署生成的)<br>3.新建空白仓库，创建./hooks/post-receive文件，使用Git-Hooks同步网站根目录，当有Git收发的时候会调用该脚本，自动将最新内容同步到网站根目录中，post-receive中指定相应git仓库以及网站根目录</p>
-<h4 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx(*)"></a>安装nginx(*)</h4><p>网上一些教程需要配置环境解压缩包编译安装，反正我是没搞成，最后不信邪直接yum一键安装，有待进一步研究nginx</p>
-<ul>
-<li>配置文件：/etc/nginx/nginx.conf</li>
-<li>日志文件：/var/log/nginx/access.log &amp; /var/log/nginx/error.log</li>
-<li>443配置CRT证书需要将得到的两个文件合并成一个</li>
-<li>访问发现403问题可能是配置文件里面user不存在或者没有权限（权限问题是个大坑）</li>
-</ul>
-<p>上述给博客挪窝具体操作可参考：<a href="http://fisher.lazybone.xyz/%E4%BB%8Egithub%E8%BF%81%E7%A7%BBhexo%E5%8D%9A%E5%AE%A2.html" target="_blank" rel="noopener">fisher’s blog</a></p>
-<h4 id="安装trojan"><a href="#安装trojan" class="headerlink" title="安装trojan(*)"></a>安装trojan(*)</h4><p>直接官网原版压缩包安装需要自己写一些配置脚本，一番折腾后仍然是linux基础不牢地动山摇……最后还是乖乖地用别人写好的脚本一键安装，参考<a href="https://tlanyan.me/trojan-tutorial/" target="_blank" rel="noopener">tlanyan</a></p>
-<ul>
-<li>/usr/local/bin/trojan</li>
-<li>/usr/local/etc/trojan/config.json</li>
-<li>/etc/systemd/system/trojan.service</li>
-</ul>
-<p>带证书的blog与trojan伪装共用方案：<br>为了trojan的安全性，443端口必须给它，将其伪装由默认80端口改为其他任意端口，如6666，nginx做相应配置；同时，为了让blog持证上岗，但已经失去了443端口，不得已80端口硬着头皮上，在80端口上配置SSL，需要注意一点的是如果用户访问http连接的话会提示“the plain http request was sent to https”意思就是http请求转到https了，其实nginx官网认为这个是正常现象定义了个497的状态，只要在nginx配置中添加以下内容就可以搞定：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">error_page <span class="number">497</span> https:<span class="comment">//$server_name:80$request_uri;   </span></span><br><span class="line"><span class="comment">// 自动跳转域名后面会带着:80很丑也是没办法了</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h3><p>1.英文文档不要依赖谷歌一键翻译，参考一下就好，否则会出现意想不到的问题<br>2.linux基础不牢地动山摇</p>
-<ul>
-<li>用户、组及文件权限</li>
-<li>各种基础命令的熟练使用</li>
-<li>vim编辑器的快捷编辑方式</li>
-</ul>
-<p>3.由linux的ssh远程登陆引发的一系列网络安全以及密码学问题<br>4.git的使用只看到了冰山一角<br>5.影响VPS网速的因素研究</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>Trojan</tag>
       </tags>
   </entry>
   <entry>
