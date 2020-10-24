@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>探索世界的方法</title>
+    <url>/2020/10/12/vps-share/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>:D</p>
+<a id="more"></a>
+<h3 id="PC端使用方法"><a href="#PC端使用方法" class="headerlink" title="PC端使用方法"></a>PC端使用方法</h3><p>1.下载qt5 -&gt; <a href="https://shijiezyw.lanzous.com/iQ78Pdht12h" target="_blank" rel="noopener">传送门</a><br>2.创建trojan连接：选择第三个手动添加trojan连接，只需要填服务器地址和密钥两个位置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/trojanPC.jpg" alt="手动添加trojan连接"></p>
+<p>3.很重要的最后几步哦：<br>①关闭所有其他代理如谷歌访问助手<br>②右键点击屏幕右下角绿色的小马，选择PAC模式绕过大陆</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/changemode.jpg" alt=""></p>
+<p>4.愉快探索世界</p>
+<h3 id="安卓端使用方法"><a href="#安卓端使用方法" class="headerlink" title="安卓端使用方法"></a>安卓端使用方法</h3><p>1.下载igniter -&gt;<a href="https://github.com/trojan-gfw/igniter/releases" target="_blank" rel="noopener">传送门</a>要用魔法打败魔法hhh,没有魔法的自己找<br>2.和qt5一样傻瓜式配置，直接填上域名和密钥就搞定了，app右上角自带测试是否连接成功</p>
+<h3 id="那么问题来了，去哪里找地址和密钥呢？？"><a href="#那么问题来了，去哪里找地址和密钥呢？？" class="headerlink" title="那么问题来了，去哪里找地址和密钥呢？？"></a>那么问题来了，去哪里找地址和密钥呢？？</h3><p>1.留言区写下你起的：①账户名②密码<br>2.我回复后即为添加用户成功<br>3.先体验觉得合适的微信扫描付款，三个月一共15块钱（网速可稳看youtube1080p,每个月30G）<br>不要宣传，不要推广，作为学习使用，纯属无奈分摊服务器费用，马上要到期了…<br>救救孩子吧，我要吃土了:&lt;</p>
+<img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/wepay.png" class="" width="200" height="200" title="title text" alt="alt text">
+
+
+]]></content>
+  </entry>
+  <entry>
     <title>trojan</title>
     <url>/2020/04/16/trojan/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是从ss-&gt;ssr-&gt;v2ray-&gt;trojan的折腾终章，只为畅通无阻科学上网<br>P.S.今天吃鱼不小心被鱼刺卡到，我脑袋里突然蹦出来一个形容遇到bug时十分形象的词语：如鲠在喉！！！</p>
@@ -64,19 +81,6 @@
       <tags>
         <tag>Trojan</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>探索世界的方法</title>
-    <url>/2020/10/12/vps-share/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>:D</p>
-<a id="more"></a>
-<h3 id="PC端使用方法"><a href="#PC端使用方法" class="headerlink" title="PC端使用方法"></a>PC端使用方法</h3><p>1.下载qt5 -&gt; <a href="https://shijiezyw.lanzous.com/iQ78Pdht12h" target="_blank" rel="noopener">传送门</a><br>2.创建trojan连接：选择第三个手动添加trojan连接，只需要填服务器地址和密钥两个位置</p>
-<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/trojanPC.jpg" alt="手动添加trojan连接"></p>
-<p>3.很重要的最后几步哦：<br>①关闭所有其他代理如谷歌访问助手<br>②右键点击屏幕右下角绿色的小马，选择PAC模式绕过大陆</p>
-<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/changemode.jpg" alt=""></p>
-<p>4.愉快探索世界</p>
-<h3 id="安卓端使用方法"><a href="#安卓端使用方法" class="headerlink" title="安卓端使用方法"></a>安卓端使用方法</h3><p>1.下载igniter -&gt;<a href="https://github.com/trojan-gfw/igniter/releases" target="_blank" rel="noopener">传送门</a>要用魔法打败魔法hhh,没有魔法的自己找<br>2.和qt5一样傻瓜式配置，直接填上域名和密钥就搞定了，app右上角自带测试是否连接成功</p>
-<h3 id="那么问题来了，去哪里找地址和密钥呢？？"><a href="#那么问题来了，去哪里找地址和密钥呢？？" class="headerlink" title="那么问题来了，去哪里找地址和密钥呢？？"></a>那么问题来了，去哪里找地址和密钥呢？？</h3>]]></content>
   </entry>
   <entry>
     <title>深度学习入门资料</title>
