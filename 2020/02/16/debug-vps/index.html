@@ -251,14 +251,14 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机网络</span>
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
                   </a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机网络</span>
                   </a>
                 </span>
             </span>
@@ -471,10 +471,11 @@
 
 <style>
 .time-item strong{background:#C71C60;color:#fff;line-height:49px;font-size:20px;font-family:Arial;padding:0 2px;margin-right:2px;border-radius:1px;box-shadow:1px 1px 3px rgba(0,0,0,0.2);}
+.t_info {margin-top:16px;}
 </style>
 
 <div class="time-item">
-	<div class="t_info">距离下一次见面还有：</div>
+	<div class="t_info">我们在一起的第</div>
 	<strong id="d">0天</strong>
 	<strong id="h">0时</strong>
 	<strong id="i">0分</strong>
@@ -486,13 +487,13 @@
       //console.log("test");
 		// 当前时间
 		var nowTime = new Date().getTime();
-		// 2016/12/22 hh:mm:ee
-		// 结束时间
+		
 
-		var endTime = new Date('2021-02-04 13:20:00');
+		// 开始时间
+		var startTime = new Date('2020-09-07 00:00:00');
 
 		// 相差的时间	
-		var t = endTime.getTime() - nowTime;
+		var t = nowTime - startTime.getTime();
 		if(t<=0){
 			//alert('设定时间已过!!');
 			 return false;

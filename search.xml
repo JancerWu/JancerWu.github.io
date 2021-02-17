@@ -75,8 +75,8 @@
 <p>*注意用户权限！！否则无法访问<br>3. 面板端换个能用的端口，伪装端随便放个页面都行</p>
 ]]></content>
       <categories>
-        <category>计算机网络</category>
         <category>linux</category>
+        <category>计算机网络</category>
       </categories>
       <tags>
         <tag>Trojan</tag>
@@ -295,8 +295,8 @@
         <category>数据结构与算法</category>
       </categories>
       <tags>
-        <tag>PAT</tag>
         <tag>CSP</tag>
+        <tag>PAT</tag>
         <tag>LeetCode</tag>
       </tags>
   </entry>
@@ -791,8 +791,8 @@
 </ol>
 <h2 id="第-4-章-更多的bash-shell命令"><a href="#第-4-章-更多的bash-shell命令" class="headerlink" title="第 4 章 更多的bash shell命令"></a>第 4 章 更多的bash shell命令</h2>]]></content>
       <categories>
-        <category>读书笔记</category>
         <category>linux</category>
+        <category>读书笔记</category>
         <category>shell</category>
       </categories>
       <tags>
@@ -832,8 +832,8 @@
 <h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><p><a href="https://www.hijk.pw/centos-one-click-install-v2ray/" target="_blank" rel="noopener">参考最后客户端下载</a></p>
 ]]></content>
       <categories>
-        <category>计算机网络</category>
         <category>linux</category>
+        <category>计算机网络</category>
       </categories>
       <tags>
         <tag>V2RAY</tag>
@@ -1118,8 +1118,8 @@
 
 ]]></content>
       <categories>
-        <category>计算机网络</category>
         <category>linux</category>
+        <category>计算机网络</category>
       </categories>
       <tags>
         <tag>VPS</tag>
