@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Solutions_of_Problems</title>
-    <url>/2021/04/11/Solutions-of-Problems/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+    <title>FDEA</title>
+    <url>/2021/04/21/FDEA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>[1]S. Liu, Q. Yu, Q. Lin, and K. C. Tan, “An adaptive clustering-based evolutionary algorithm for many-objective optimization problems,” Information Sciences, vol. 537, pp. 261–283, Oct. 2020, doi: 10.1016/j.ins.2020.03.104.</p>
+<a id="more"></a>
+<h3 id="FRAMWORK"><a href="#FRAMWORK" class="headerlink" title="FRAMWORK"></a>FRAMWORK</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-09-42-09.png" alt="FDEA-2021-04-21-09-42-09"></p>
+<h3 id="Fuzzy-Decomposition"><a href="#Fuzzy-Decomposition" class="headerlink" title="Fuzzy Decomposition"></a>Fuzzy Decomposition</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-09-48-55.png" alt="FDEA-2021-04-21-09-48-55"></p>
+<h4 id="Fuzzy-Prediction"><a href="#Fuzzy-Prediction" class="headerlink" title="Fuzzy Prediction"></a>Fuzzy Prediction</h4><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-09-58-01.png" alt="FDEA-2021-04-21-09-58-01"></p>
+<h4 id="Weight-Vector-Extraction"><a href="#Weight-Vector-Extraction" class="headerlink" title="Weight Vector Extraction"></a>Weight Vector Extraction</h4><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-10-01-58.png" alt="FDEA-2021-04-21-10-01-58"></p>
+<h3 id="Elite-Selection"><a href="#Elite-Selection" class="headerlink" title="Elite Selection"></a>Elite Selection</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-10-04-19.png" alt="FDEA-2021-04-21-10-04-19"></p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-09-45-12.png" alt="FDEA-2021-04-21-09-45-12"></p>
+]]></content>
   </entry>
   <entry>
     <title>MaOEA_AC</title>
@@ -55,6 +63,17 @@
 <a id="more"></a>
 
 <h3 id="第七章-贝叶斯分类器"><a href="#第七章-贝叶斯分类器" class="headerlink" title="第七章 贝叶斯分类器"></a>第七章 贝叶斯分类器</h3><p>贝叶斯公式例子回顾：<a href="https://www.matongxue.com/madocs/279/" target="_blank" rel="noopener">https://www.matongxue.com/madocs/279/</a><br>朴素贝叶斯分类：<a href="https://zhuanlan.zhihu.com/p/26262151" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26262151</a><br>最大似然估计：<a href="https://www.matongxue.com/madocs/447/" target="_blank" rel="noopener">https://www.matongxue.com/madocs/447/</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Solutions_of_Problems</title>
+    <url>/2021/04/11/Solutions-of-Problems/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>问题解决方案备忘录</p>
+<a id="more"></a>
+<ul>
+<li>异或、异或和的性质与应用 <a href="https://blog.csdn.net/jerry99s/article/details/46485417" target="_blank" rel="noopener">1</a> / <a href="http://lijinma.com/blog/2014/05/29/amazing-xor/" target="_blank" rel="noopener">2</a></li>
+<li>KMP字符串匹配 <a href="http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html" target="_blank" rel="noopener">1</a></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
