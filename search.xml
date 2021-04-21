@@ -3,7 +3,7 @@
   <entry>
     <title>FDEA</title>
     <url>/2021/04/21/FDEA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>[1]S. Liu, Q. Yu, Q. Lin, and K. C. Tan, “An adaptive clustering-based evolutionary algorithm for many-objective optimization problems,” Information Sciences, vol. 537, pp. 261–283, Oct. 2020, doi: 10.1016/j.ins.2020.03.104.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>[1] S. Liu, Q. Lin, K. C. Tan, M. Gong, and C. A. C. Coello, “A Fuzzy Decomposition-Based Multi/Many-Objective Evolutionary Algorithm,” IEEE Trans. Cybern., pp. 1–15, 2020, doi: 10.1109/TCYB.2020.3008697.</p>
 <a id="more"></a>
 <h3 id="FRAMWORK"><a href="#FRAMWORK" class="headerlink" title="FRAMWORK"></a>FRAMWORK</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-09-42-09.png" alt="FDEA-2021-04-21-09-42-09"></p>
 <h3 id="Fuzzy-Decomposition"><a href="#Fuzzy-Decomposition" class="headerlink" title="Fuzzy Decomposition"></a>Fuzzy Decomposition</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-09-48-55.png" alt="FDEA-2021-04-21-09-48-55"></p>
