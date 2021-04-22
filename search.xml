@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MaOEA_AC</title>
+    <url>/2021/04/18/MaOEA-AC/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>[1] S. Liu, Q. Yu, Q. Lin, and K. C. Tan, “An adaptive clustering-based evolutionary algorithm for many-objective optimization problems,” Information Sciences, vol. 537, pp. 261–283, Oct. 2020, doi: 10.1016/j.ins.2020.03.104.</p>
+<a id="more"></a>
+<h3 id="FRAMWORK"><a href="#FRAMWORK" class="headerlink" title="FRAMWORK"></a>FRAMWORK</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-06-32.png" alt="MaOEA-AC-2021-04-18-16-06-32"></p>
+<h3 id="ACS"><a href="#ACS" class="headerlink" title="ACS"></a>ACS</h3><h4 id="Adaptive-clustering"><a href="#Adaptive-clustering" class="headerlink" title="Adaptive clustering"></a>Adaptive clustering</h4><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-25-28.png" alt="MaOEA-AC-2021-04-18-16-25-28"></p>
+<h5 id="Adaptive-estimation-of-p"><a href="#Adaptive-estimation-of-p" class="headerlink" title="Adaptive estimation of p"></a>Adaptive estimation of p</h5><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-16-49.png" alt="MaOEA-AC-2021-04-18-16-16-49"></p>
+<h5 id="Hierarchical-clustering"><a href="#Hierarchical-clustering" class="headerlink" title="Hierarchical clustering"></a>Hierarchical clustering</h5><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-22-13.png" alt="MaOEA-AC-2021-04-18-16-22-13"></p>
+<h3 id="ESS"><a href="#ESS" class="headerlink" title="ESS"></a>ESS</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-28-02.png" alt="MaOEA-AC-2021-04-18-16-28-02"></p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-22-09-18-55.png" alt="MaOEA-AC-2021-04-22-09-18-55"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>FDEA</title>
     <url>/2021/04/21/FDEA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>[1] S. Liu, Q. Lin, K. C. Tan, M. Gong, and C. A. C. Coello, “A Fuzzy Decomposition-Based Multi/Many-Objective Evolutionary Algorithm,” IEEE Trans. Cybern., pp. 1–15, 2020, doi: 10.1109/TCYB.2020.3008697.</p>
@@ -11,18 +24,6 @@
 <h4 id="Weight-Vector-Extraction"><a href="#Weight-Vector-Extraction" class="headerlink" title="Weight Vector Extraction"></a>Weight Vector Extraction</h4><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-10-01-58.png" alt="FDEA-2021-04-21-10-01-58"></p>
 <h3 id="Elite-Selection"><a href="#Elite-Selection" class="headerlink" title="Elite Selection"></a>Elite Selection</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-10-04-19.png" alt="FDEA-2021-04-21-10-04-19"></p>
 <h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/FDEA-2021-04-21-09-45-12.png" alt="FDEA-2021-04-21-09-45-12"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>MaOEA_AC</title>
-    <url>/2021/04/18/MaOEA-AC/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>[1] S. Liu, Q. Yu, Q. Lin, and K. C. Tan, “An adaptive clustering-based evolutionary algorithm for many-objective optimization problems,” Information Sciences, vol. 537, pp. 261–283, Oct. 2020, doi: 10.1016/j.ins.2020.03.104.</p>
-<a id="more"></a>
-<h3 id="FRAMWORK"><a href="#FRAMWORK" class="headerlink" title="FRAMWORK"></a>FRAMWORK</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-06-32.png" alt="MaOEA-AC-2021-04-18-16-06-32"></p>
-<h3 id="ACS"><a href="#ACS" class="headerlink" title="ACS"></a>ACS</h3><h4 id="Adaptive-clustering"><a href="#Adaptive-clustering" class="headerlink" title="Adaptive clustering"></a>Adaptive clustering</h4><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-25-28.png" alt="MaOEA-AC-2021-04-18-16-25-28"></p>
-<h5 id="Adaptive-estimation-of-p"><a href="#Adaptive-estimation-of-p" class="headerlink" title="Adaptive estimation of p"></a>Adaptive estimation of p</h5><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-16-49.png" alt="MaOEA-AC-2021-04-18-16-16-49"></p>
-<h5 id="Hierarchical-clustering"><a href="#Hierarchical-clustering" class="headerlink" title="Hierarchical clustering"></a>Hierarchical clustering</h5><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-22-13.png" alt="MaOEA-AC-2021-04-18-16-22-13"></p>
-<h3 id="ESS"><a href="#ESS" class="headerlink" title="ESS"></a>ESS</h3><p><img src="https://cdn.jsdelivr.net/gh/JancerWu/picgoVS/img/MaOEA-AC-2021-04-18-16-28-02.png" alt="MaOEA-AC-2021-04-18-16-28-02"></p>
 ]]></content>
   </entry>
   <entry>
