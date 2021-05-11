@@ -72,24 +72,32 @@
     <url>/2021/04/11/Solutions-of-Problems/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>问题解决方案备忘录</p>
 <a id="more"></a>
-<h2 id="琐碎"><a href="#琐碎" class="headerlink" title="琐碎"></a>琐碎</h2><ul>
+<h3 id="琐碎"><a href="#琐碎" class="headerlink" title="琐碎"></a>琐碎</h3><ul>
 <li><p>异或、异或和的性质与应用 <a href="https://blog.csdn.net/jerry99s/article/details/46485417" target="_blank" rel="noopener">1</a> / <a href="http://lijinma.com/blog/2014/05/29/amazing-xor/" target="_blank" rel="noopener">2</a></p>
 </li>
 <li><p>KMP字符串匹配 <a href="http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html" target="_blank" rel="noopener">1</a></p>
 </li>
-<li><p>Exception in thread “main” java.lang.OutOfMemoryError: Java heap space <a href="https://cloud.tencent.com/developer/article/1350309" target="_blank" rel="noopener">1</a></p>
+<li><p>java.lang.OutOfMemoryError: Java heap space <a href="https://cloud.tencent.com/developer/article/1350309" target="_blank" rel="noopener">1</a> 多半是写了个死循环</p>
 </li>
 </ul>
-<h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><ul>
+<h3 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h3><ul>
 <li>多元高斯分布 <a href="https://zhuanlan.zhihu.com/p/58987388" target="_blank" rel="noopener">1</a></li>
+<li>核函数Kernel <a href="https://blog.csdn.net/zkq_1986/article/details/52448238" target="_blank" rel="noopener">1</a> / <a href="https://www.zhihu.com/question/24627666" target="_blank" rel="noopener">2</a></li>
+<li>RKHS(Reproducing Kernel Hilbert Space) <a href="https://zhuanlan.zhihu.com/p/54704957" target="_blank" rel="noopener">1</a> / <a href="">2</a></li>
 </ul>
-<h2 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h2><ul>
+<h3 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h3><ul>
 <li><p>自编码器 <a href="https://zhuanlan.zhihu.com/p/80377698" target="_blank" rel="noopener">1</a> / <a href="https://zhuanlan.zhihu.com/p/34238979" target="_blank" rel="noopener">2</a> / <a href="https://keras-cn.readthedocs.io/en/latest/legacy/blog/autoencoder/" target="_blank" rel="noopener">3</a> / </p>
 </li>
 <li><p>生成对抗网络</p>
 </li>
 </ul>
-<h2 id="迁移方法"><a href="#迁移方法" class="headerlink" title="迁移方法"></a>迁移方法</h2>]]></content>
+<h3 id="迁移方法"><a href="#迁移方法" class="headerlink" title="迁移方法"></a>迁移方法</h3><ul>
+<li><p>MMD和再生核希尔伯特空间 <a href="https://zhuanlan.zhihu.com/p/25418364" target="_blank" rel="noopener">1</a></p>
+</li>
+<li><p>流形学习(GFK) <a href="https://zhuanlan.zhihu.com/p/27782708" target="_blank" rel="noopener">1</a> / </p>
+</li>
+</ul>
+]]></content>
   </entry>
   <entry>
     <title>探索世界的方法</title>
