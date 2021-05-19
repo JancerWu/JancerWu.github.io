@@ -9,7 +9,7 @@
 <li>异或、异或和的性质与应用 <a href="https://blog.csdn.net/jerry99s/article/details/46485417" target="_blank" rel="noopener">1</a> / <a href="http://lijinma.com/blog/2014/05/29/amazing-xor/" target="_blank" rel="noopener">2</a></li>
 <li>KMP字符串匹配 <a href="http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html" target="_blank" rel="noopener">1</a></li>
 <li>Java heap space <a href="https://cloud.tencent.com/developer/article/1350309" target="_blank" rel="noopener">1</a> 多半是写了个死循环</li>
-<li>Command line is too long <a href="https://cloud.tencent.com/developer/article/1751411" target="_blank" rel="noopener">1</a><br>添加 “<property name="dynamic.classpath" value="true" />“</li>
+<li>Command line is too long <a href="https://cloud.tencent.com/developer/article/1751411" target="_blank" rel="noopener">1</a><br>添加 property name=”dynamic.classpath” value=”true” </li>
 </ul>
 <h3 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h3><ul>
 <li>多元高斯分布 <a href="https://zhuanlan.zhihu.com/p/58987388" target="_blank" rel="noopener">1</a></li>
