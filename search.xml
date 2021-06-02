@@ -58,7 +58,12 @@
 </li>
 </ul>
 <h3 id="Java画散点图"><a href="#Java画散点图" class="headerlink" title="Java画散点图"></a>Java画散点图</h3><ul>
-<li>二维三维散点图 <a href="https://blog.csdn.net/u013555719/article/details/114296515" target="_blank" rel="noopener">1</a> / <a href="https://mp.weixin.qq.com/s/OaLWvyWYjQrCzj1nUGzrVQ" target="_blank" rel="noopener">2D</a> / <a href="https://mp.weixin.qq.com/s/dPxFtqI2ydyk01RFzkCDPg" target="_blank" rel="noopener">3D</a></li>
+<li><p>二维三维散点图 <a href="https://blog.csdn.net/u013555719/article/details/114296515" target="_blank" rel="noopener">1</a> / <a href="https://mp.weixin.qq.com/s/OaLWvyWYjQrCzj1nUGzrVQ" target="_blank" rel="noopener">2D</a> / <a href="https://mp.weixin.qq.com/s/dPxFtqI2ydyk01RFzkCDPg" target="_blank" rel="noopener">3D</a></p>
+</li>
+<li><p><a href="https://www.jfree.org/jfreechart/javadoc/index.html" target="_blank" rel="noopener">JFreeChart 1.5.3 API</a> </p>
+</li>
+<li><p><a href="https://www.codenong.com/7205742/" target="_blank" rel="noopener">JFreeChart 动态散点图</a></p>
+</li>
 </ul>
 ]]></content>
   </entry>
