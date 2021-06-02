@@ -49,6 +49,17 @@
 <h3 id="数学方法"><a href="#数学方法" class="headerlink" title="数学方法"></a>数学方法</h3><ul>
 <li>Spearman’s rank correlation coefficient <a href="https://www.youtube.com/watch?v=FNVdFV4fLfs" target="_blank" rel="noopener">例子</a> / <a href="https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient" target="_blank" rel="noopener">wiki</a></li>
 </ul>
+<h3 id="MATLAB琐碎"><a href="#MATLAB琐碎" class="headerlink" title="MATLAB琐碎"></a>MATLAB琐碎</h3><ul>
+<li><p>代码节 <a href="https://ww2.mathworks.cn/help/matlab/matlab_prog/run-sections-of-programs.html" target="_blank" rel="noopener">1</a></p>
+</li>
+<li><p>save的基本使用 <a href="https://ww2.mathworks.cn/help/matlab/ref/save.html" target="_blank" rel="noopener">1</a></p>
+</li>
+<li><p>在工作区之间共享数据 <a href="https://ww2.mathworks.cn/help/matlab/matlab_prog/share-data-between-workspaces.html" target="_blank" rel="noopener">1</a></p>
+</li>
+</ul>
+<h3 id="Java画散点图"><a href="#Java画散点图" class="headerlink" title="Java画散点图"></a>Java画散点图</h3><ul>
+<li>二维三维散点图 <a href="https://blog.csdn.net/u013555719/article/details/114296515" target="_blank" rel="noopener">1</a> / <a href="https://mp.weixin.qq.com/s/OaLWvyWYjQrCzj1nUGzrVQ" target="_blank" rel="noopener">2D</a> / <a href="https://mp.weixin.qq.com/s/dPxFtqI2ydyk01RFzkCDPg" target="_blank" rel="noopener">3D</a></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
