@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>react-demo</title>
+    <url>/2021/07/25/react-demo/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>字节前端学习——开发一个掘金客户端（react-demo）</p>
+<a id="more"></a>
+<h3 id="过程记录"><a href="#过程记录" class="headerlink" title="过程记录"></a>过程记录</h3><p>初始阶段</p>
+<ul>
+<li><p><a href="https://bytedance.feishu.cn/docs/doccnZXwbxjgLe11SnPRBlxR6Kb#Ql27gy" target="_blank" rel="noopener">轻服务</a></p>
+</li>
+<li><p><a href="https://code.visualstudio.com/docs/nodejs/reactjs-tutorial" target="_blank" rel="noopener">Using React in Visual Studio Code</a></p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>探索世界的方法</title>
     <url>/2020/10/12/vps-share/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>:D</p>
