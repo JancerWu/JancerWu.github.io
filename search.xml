@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>react-demo</title>
-    <url>/2021/07/25/react-demo/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>字节前端学习——开发一个掘金客户端（react-demo）</p>
-<a id="more"></a>
-<h3 id="过程记录"><a href="#过程记录" class="headerlink" title="过程记录"></a>过程记录</h3><p>初始阶段</p>
-<ul>
-<li><p><a href="https://bytedancecampus1.feishu.cn/docs/doccn6XG4oBZrUhWTl730xa0ovg" target="_blank" rel="noopener">前端基础课程</a></p>
-</li>
-<li><p><a href="https://html.spec.whatwg.org/dev/" target="_blank" rel="noopener">html规范文档</a></p>
-</li>
-<li><p><a href="https://bytedance.feishu.cn/docs/doccnZXwbxjgLe11SnPRBlxR6Kb#Ql27gy" target="_blank" rel="noopener">轻服务</a></p>
-</li>
-<li><p><a href="https://code.visualstudio.com/docs/nodejs/reactjs-tutorial" target="_blank" rel="noopener">Using React in Visual Studio Code</a></p>
-</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>探索世界的方法</title>
-    <url>/2020/10/12/vps-share/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>:D</p>
-<a id="more"></a>
-<h3 id="PC端使用方法"><a href="#PC端使用方法" class="headerlink" title="PC端使用方法"></a>PC端使用方法</h3><p>1.下载qt5 -&gt; <a href="https://shijiezyw.lanzous.com/iQ78Pdht12h" target="_blank" rel="noopener">传送门</a>(哈哈哈已失效打不开了)<br>2.创建trojan连接：选择第三个手动添加trojan连接，只需要填服务器地址和密钥两个位置</p>
-<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/trojanPC.jpg" alt="手动添加trojan连接"></p>
-<p>3.很重要的最后几步哦：<br>①关闭所有其他代理如谷歌访问助手<br>②右键点击屏幕右下角绿色的小马，选择PAC模式绕过大陆</p>
-<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/changemode.jpg" alt=""></p>
-<p>4.愉快探索世界</p>
-<h3 id="安卓端使用方法"><a href="#安卓端使用方法" class="headerlink" title="安卓端使用方法"></a>安卓端使用方法</h3><p>1.下载igniter -&gt;<a href="https://github.com/trojan-gfw/igniter/releases" target="_blank" rel="noopener">传送门</a>要用魔法打败魔法hhh,没有魔法的自己找<br>2.和qt5一样傻瓜式配置，直接填上域名和密钥就搞定了，app右上角自带测试是否连接成功</p>
-<h3 id="那么问题来了，去哪里找地址和密钥呢？？"><a href="#那么问题来了，去哪里找地址和密钥呢？？" class="headerlink" title="那么问题来了，去哪里找地址和密钥呢？？"></a>那么问题来了，去哪里找地址和密钥呢？？</h3><p>1.留言区写下你起的：①账户名②密码<br>2.我回复后即为添加用户成功</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Solutions_of_Problems</title>
     <url>/2021/04/11/Solutions-of-Problems/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>问题解决方案备忘录，后期直接变成大杂烩hhh</p>
@@ -128,6 +96,44 @@
 <h3 id="学习无聊怎么办？"><a href="#学习无聊怎么办？" class="headerlink" title="学习无聊怎么办？"></a>学习无聊怎么办？</h3><ul>
 <li><a href="https://www.zhihu.com/question/431739003" target="_blank" rel="noopener">1</a> / </li>
 </ul>
+<h3 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h3><ul>
+<li><p><a href="https://blog.csdn.net/qq_38764576/article/details/110768623?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link" target="_blank" rel="noopener">windows安全中心修复方法</a></p>
+</li>
+<li><p><a href="http://www.xitongcheng.com/jiaocheng/xtazjc_article_35407.html" target="_blank" rel="noopener">专业版激活-&gt;局域网远程连接</a></p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>react-demo</title>
+    <url>/2021/07/25/react-demo/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>字节前端学习——开发一个掘金客户端（react-demo）</p>
+<a id="more"></a>
+<h3 id="过程记录"><a href="#过程记录" class="headerlink" title="过程记录"></a>过程记录</h3><p>初始阶段</p>
+<ul>
+<li><p><a href="https://bytedancecampus1.feishu.cn/docs/doccn6XG4oBZrUhWTl730xa0ovg" target="_blank" rel="noopener">前端基础课程</a></p>
+</li>
+<li><p><a href="https://html.spec.whatwg.org/dev/" target="_blank" rel="noopener">html规范文档</a></p>
+</li>
+<li><p><a href="https://bytedance.feishu.cn/docs/doccnZXwbxjgLe11SnPRBlxR6Kb#Ql27gy" target="_blank" rel="noopener">轻服务</a></p>
+</li>
+<li><p><a href="https://code.visualstudio.com/docs/nodejs/reactjs-tutorial" target="_blank" rel="noopener">Using React in Visual Studio Code</a></p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>探索世界的方法</title>
+    <url>/2020/10/12/vps-share/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>:D</p>
+<a id="more"></a>
+<h3 id="PC端使用方法"><a href="#PC端使用方法" class="headerlink" title="PC端使用方法"></a>PC端使用方法</h3><p>1.下载qt5 -&gt; <a href="https://shijiezyw.lanzous.com/iQ78Pdht12h" target="_blank" rel="noopener">传送门</a>(哈哈哈已失效打不开了)<br>2.创建trojan连接：选择第三个手动添加trojan连接，只需要填服务器地址和密钥两个位置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/trojanPC.jpg" alt="手动添加trojan连接"></p>
+<p>3.很重要的最后几步哦：<br>①关闭所有其他代理如谷歌访问助手<br>②右键点击屏幕右下角绿色的小马，选择PAC模式绕过大陆</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JancerWu/ImgPicgo/img/changemode.jpg" alt=""></p>
+<p>4.愉快探索世界</p>
+<h3 id="安卓端使用方法"><a href="#安卓端使用方法" class="headerlink" title="安卓端使用方法"></a>安卓端使用方法</h3><p>1.下载igniter -&gt;<a href="https://github.com/trojan-gfw/igniter/releases" target="_blank" rel="noopener">传送门</a>要用魔法打败魔法hhh,没有魔法的自己找<br>2.和qt5一样傻瓜式配置，直接填上域名和密钥就搞定了，app右上角自带测试是否连接成功</p>
+<h3 id="那么问题来了，去哪里找地址和密钥呢？？"><a href="#那么问题来了，去哪里找地址和密钥呢？？" class="headerlink" title="那么问题来了，去哪里找地址和密钥呢？？"></a>那么问题来了，去哪里找地址和密钥呢？？</h3><p>1.留言区写下你起的：①账户名②密码<br>2.我回复后即为添加用户成功</p>
 ]]></content>
   </entry>
   <entry>
