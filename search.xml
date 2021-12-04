@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Java题解注意事项</title>
+    <url>/2021/12/04/Java_for_code_acm_mode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Java解题(ACM模式)注意事项</p>
+<a id="more"></a>
+<h3 id="处理样例的循环输入输出"><a href="#处理样例的循环输入输出" class="headerlink" title="处理样例的循环输入输出"></a>处理样例的循环输入输出</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner input = <span class="keyword">new</span> Scanner(System.in); </span><br><span class="line">        <span class="keyword">while</span> (input.hasNext()) &#123; </span><br><span class="line">            <span class="comment">//注意while处理多个case  </span></span><br><span class="line">            <span class="keyword">int</span> a = input.nextInt();</span><br><span class="line">            <span class="keyword">int</span> b = input.nextInt();</span><br><span class="line">            System.out.println(a + b);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h3>]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Solutions_of_Problems</title>
     <url>/2021/04/11/Solutions-of-Problems/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>问题解决方案备忘录，后期直接变成大杂烩hhh</p>
