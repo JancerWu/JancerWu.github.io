@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Project_MyRoom</title>
+    <url>/2022/05/10/Project-MyRoom/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>记录一下2022年5月的前端学习</p>
+<a id="more"></a>
+<h4 id="前端三剑客入门"><a href="#前端三剑客入门" class="headerlink" title="前端三剑客入门"></a>前端三剑客入门</h4><ul>
+<li>html</li>
+<li>css</li>
+<li>js</li>
+</ul>
+<h4 id="React入门"><a href="#React入门" class="headerlink" title="React入门"></a>React入门</h4>]]></content>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java题解注意事项</title>
     <url>/2021/12/04/Java_for_code_acm_mode/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Java解题(ACM模式)注意事项</p>
 <a id="more"></a>
 <h3 id="处理样例的循环输入输出"><a href="#处理样例的循环输入输出" class="headerlink" title="处理样例的循环输入输出"></a>处理样例的循环输入输出</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner input = <span class="keyword">new</span> Scanner(System.in); </span><br><span class="line">        <span class="keyword">while</span> (input.hasNext()) &#123; </span><br><span class="line">            <span class="comment">//注意while处理多个case  </span></span><br><span class="line">            <span class="keyword">int</span> a = input.nextInt();</span><br><span class="line">            <span class="keyword">int</span> b = input.nextInt();</span><br><span class="line">            System.out.println(a + b);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> line = input.nextInt();</span><br><span class="line">        scanner.nextLine();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; line; i++) &#123;</span><br><span class="line">           <span class="comment">//code</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h3 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h3>]]></content>
       <categories>
         <category>数据结构与算法</category>
