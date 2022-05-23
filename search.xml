@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>nvm</title>
+    <title>node.js工具</title>
     <url>/2022/05/16/nvm/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>NodeJs 版本管理工具nvm</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>node.js 各种工具备忘录</p>
 <a id="more"></a>
-<ul>
+<h4 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h4><ul>
 <li><a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noopener">下载地址</a></li>
-<li>当前版本链接文件权限问题为解决: 需要管理员权限的powershell才能切换并且建立文件</li>
+<li>当前版本链接文件权限问题导致不能切换版本: 设置vscode默认以管理员权限打开, 然后terminal也就是默认管理员权限了</li>
 <li>常用操作:</li>
 </ul>
 <ol>
 <li>更换全局路径:<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">"修改路径"</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">"修改路径"</span></span><br></pre></td></tr></table></figure></li>
-<li>更换镜像源: 在nvm安装目录的setting中加上:<figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line"><span class="string">node_mirror:</span> <span class="string">https:</span><span class="comment">//npm.taobao.org/mirrors/node/</span></span><br><span class="line"><span class="string">npm_mirror:</span> <span class="string">https:</span><span class="comment">//npm.taobao.org/mirrors/npm/</span></span><br></pre></td></tr></table></figure>
+<li>更换镜像源: 在nvm安装目录的setting中加上:<figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line"><span class="string">node_mirror:</span> <span class="string">https:</span><span class="comment">//npmmirror.com/mirrors/node/</span></span><br><span class="line"><span class="string">npm_mirror:</span> <span class="string">https:</span><span class="comment">//npmmirror.com/mirrors/npm/</span></span><br></pre></td></tr></table></figure>
+
 </li>
+</ol>
+<h4 id="pnpm"><a href="#pnpm" class="headerlink" title="pnpm"></a>pnpm</h4><ol>
+<li><a href="https://www.pnpm.cn/installation" target="_blank" rel="noopener">参考</a></li>
+<li>安装及更改store路径<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br><span class="line">pnpm<span class="built_in"> config </span><span class="builtin-name">set</span> store-dir \path\.pnpm-store</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="pm2"><a href="#pm2" class="headerlink" title="pm2"></a>pm2</h4><h4 id="cross-evn"><a href="#cross-evn" class="headerlink" title="cross-evn"></a>cross-evn</h4><ol>
+<li><a href="https://chowdera.com/2022/03/202203250219595991.html" target="_blank" rel="noopener">参考</a></li>
 </ol>
 ]]></content>
   </entry>
