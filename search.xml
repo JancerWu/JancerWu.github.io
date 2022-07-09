@@ -1382,4 +1382,14 @@
 <h3 id="那么问题来了，去哪里找地址和密钥呢？？"><a href="#那么问题来了，去哪里找地址和密钥呢？？" class="headerlink" title="那么问题来了，去哪里找地址和密钥呢？？"></a>那么问题来了，去哪里找地址和密钥呢？？</h3><p>1.留言区写下你起的：①账户名②密码<br>2.我回复后即为添加用户成功</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>leetcode</title>
+    <url>/2022/07/09/leetcode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>重新开一个leetcode题型分类记录</p>
+<a id="more"></a>
+<h3 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h3><ol>
+<li>序列DP<br><a href="https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/" target="_blank" rel="noopener">873. 最长的斐波那契子序列的长度</a></li>
+</ol>
+]]></content>
+  </entry>
 </search>
