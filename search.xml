@@ -1420,6 +1420,13 @@
 <h3 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h3><ol>
 <li>动态规划：子问题，状态，选择，初始条件，状态转移方程，边界条件细节</li>
 </ol>
-<h3 id="字符串搜索"><a href="#字符串搜索" class="headerlink" title="字符串搜索"></a>字符串搜索</h3><h3 id="区间问题"><a href="#区间问题" class="headerlink" title="区间问题"></a>区间问题</h3>]]></content>
+<h3 id="字符串搜索"><a href="#字符串搜索" class="headerlink" title="字符串搜索"></a>字符串搜索</h3><h3 id="区间问题"><a href="#区间问题" class="headerlink" title="区间问题"></a>区间问题</h3><h3 id="单源最短路径"><a href="#单源最短路径" class="headerlink" title="单源最短路径"></a>单源最短路径</h3><ol>
+<li>迪杰斯特拉算法：贪心更新当前最短距离</li>
+</ol>
+<ul>
+<li>最小堆更新边 O(mlogm)</li>
+<li>遍历点 O($n^2$+m)</li>
+</ul>
+]]></content>
   </entry>
 </search>
