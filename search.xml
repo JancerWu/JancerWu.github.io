@@ -1424,8 +1424,8 @@
 <li>迪杰斯特拉算法：贪心更新当前最短距离</li>
 </ol>
 <ul>
-<li>最小堆更新边 O(mlogm)</li>
-<li>遍历点 O($n^2$+m)</li>
+<li>最小堆更新边 O($mlogm$)</li>
+<li>遍历点 O($n^2+m$)</li>
 </ul>
 ]]></content>
   </entry>
